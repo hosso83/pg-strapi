@@ -10,19 +10,23 @@ export interface ProjectsPage {
   [key: string]: any;
 }
 
+declare const strapi: any;
+
 export async function getProjectsPage(): Promise<ProjectsPage | null> {
-  const base = process.env.STRAPI_URL || 'http://localhost:1337';
-  const url = `${base.replace(/\/$/, '')}/api/projects-page?populate=deep`;
+  try {
+    const results = await strapi.entityService.findMany('api::projects-page.projects-page', {
+      populate: 'deep',
+    });
 
-  const res = await fetch(url, { method: 'GET' });
-  if (!res.ok) {
-    throw new Error(`Failed to fetch projects page: ${res.status} ${res.statusText}`);
+    const entry = Array.isArray(results) ? results[0] : results;
+    if (!entry) return null;
+
+    // If the entityService returns { id, attributes } or the raw attributes
+    const attrs = entry.attributes ?? entry;
+    return attrs as ProjectsPage;
+  } catch (err: any) {
+    throw new Error(`Failed to load projects page from Strapi: ${err?.message ?? err}`);
   }
-
-  const body = await res.json();
-  // Strapi v4 returns { data: { id, attributes: { ... } } }
-  const attributes = body?.data?.attributes ?? null;
-  return attributes;
 }
 
 export default getProjectsPage;
