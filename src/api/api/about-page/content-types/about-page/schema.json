@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page",
+    "description": "About us page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.hero"
+    },
+    "purpose": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.purpose-section"
+    },
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.values-section"
+    },
+    "impact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.impact-section"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.cta-section"
+    }
+  }
+}

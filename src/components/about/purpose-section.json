@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_about_purpose_sections",
+  "info": {
+    "displayName": "Purpose Section",
+    "icon": "target",
+    "description": "Our purpose section"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

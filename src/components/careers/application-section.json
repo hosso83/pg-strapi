@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_careers_application_sections",
+  "info": {
+    "displayName": "Application Section",
+    "icon": "fileText",
+    "description": "Job application section"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "experienceLevels": {
+      "type": "json"
+    },
+    "successTitle": {
+      "type": "string"
+    },
+    "successDescription": {
+      "type": "text"
+    }
+  }
+}

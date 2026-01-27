@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_about_heroes",
+  "info": {
+    "displayName": "About Hero",
+    "icon": "layout",
+    "description": "About page hero section"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    }
+  }
+}

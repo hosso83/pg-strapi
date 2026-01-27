@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_projects_heroes",
+  "info": {
+    "displayName": "Projects Hero",
+    "icon": "layout",
+    "description": "Projects page hero section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    }
+  }
+}

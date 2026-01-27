@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_contact_form_configs",
+  "info": {
+    "displayName": "Form Config",
+    "icon": "mail",
+    "description": "Contact form configuration"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "inquiryTypes": {
+      "type": "json"
+    },
+    "successTitle": {
+      "type": "string"
+    },
+    "successDescription": {
+      "type": "text"
+    }
+  }
+}

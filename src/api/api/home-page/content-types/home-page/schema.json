@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Homepage content and configuration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.hero",
+      "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.feature-item"
+    },
+    "insightsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-header"
+    },
+    "featuredInsights": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::insight.insight"
+    },
+    "sectorsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-header"
+    },
+    "featuredSectors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sector.sector"
+    },
+    "excellenceSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.excellence-section"
+    },
+    "ctaSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.cta-section"
+    }
+  }
+}

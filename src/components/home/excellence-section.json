@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_home_excellence_sections",
+  "info": {
+    "displayName": "Excellence Section",
+    "icon": "trophy",
+    "description": "Homepage excellence/about preview section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "values": {
+      "type": "json"
+    },
+    "action": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta-button"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
