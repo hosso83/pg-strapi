@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "careers_pages",
+  "info": {
+    "singularName": "careers-page",
+    "pluralName": "careers-pages",
+    "displayName": "careers-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "careers.hero",
+      "repeatable": false
+    },
+    "whyWorkWithUs": {
+      "type": "component",
+      "component": "careers.benefits-section",
+      "repeatable": false
+    },
+    "positionSection": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": true
+    },
+    "applicationSection": {
+      "type": "component",
+      "component": "careers.application-section",
+      "repeatable": false
+    }
+  }
+}

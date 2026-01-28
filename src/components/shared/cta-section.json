@@ -20,18 +20,30 @@
     },
     "primaryAction": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.cta-button"
+      "component": "shared.cta-button",
+      "repeatable": false
     },
     "secondaryAction": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.cta-button"
+      "component": "shared.cta-button",
+      "repeatable": false
     },
     "variant": {
       "type": "enumeration",
-      "enum": ["default", "dark", "card", "banner"],
-      "default": "default"
+      "default": "default",
+      "enum": [
+        "default",
+        "dark",
+        "card",
+        "banner"
+      ]
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

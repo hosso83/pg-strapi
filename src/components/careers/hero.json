@@ -19,18 +19,20 @@
     },
     "primaryButton": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.cta-button"
+      "component": "shared.cta-button",
+      "repeatable": false
     },
     "secondaryButton": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.cta-button"
+      "component": "shared.cta-button",
+      "repeatable": false
     },
-    "image": {
+    "backgroundImage": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

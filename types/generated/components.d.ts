@@ -122,9 +122,9 @@ export interface CareersHero extends Struct.ComponentSchema {
     icon: 'layout';
   };
   attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
     description: Schema.Attribute.Text;
     eyebrow: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images'>;
     primaryButton: Schema.Attribute.Component<'shared.cta-button', false>;
     secondaryButton: Schema.Attribute.Component<'shared.cta-button', false>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -263,6 +263,7 @@ export interface SharedCtaSection extends Struct.ComponentSchema {
     displayName: 'CTA Section';
   };
   attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
     description: Schema.Attribute.Text;
     eyebrow: Schema.Attribute.String;
     primaryAction: Schema.Attribute.Component<'shared.cta-button', false>;
