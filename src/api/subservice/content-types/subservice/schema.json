@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subservices",
+  "info": {
+    "singularName": "subservice",
+    "pluralName": "subservices",
+    "displayName": "Subservice"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "bullets": {
+      "type": "json"
+    },
+    "parentService": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::service.service",
+      "inversedBy": "subservices"
+    }
+  }
+}

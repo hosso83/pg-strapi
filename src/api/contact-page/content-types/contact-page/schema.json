@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_pages",
+  "info": {
+    "singularName": "contact-page",
+    "pluralName": "contact-pages",
+    "displayName": "contact-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "hero": {
+      "type": "component",
+      "component": "about.hero",
+      "repeatable": false
+    },
+    "offices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::office.office"
+    },
+    "form": {
+      "type": "component",
+      "component": "contact.form-config",
+      "repeatable": false
+    }
+  }
+}

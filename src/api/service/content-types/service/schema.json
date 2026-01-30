@@ -9,11 +9,7 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": false
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string",
@@ -53,6 +49,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::project.project"
+    },
+    "subservices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subservice.subservice",
+      "mappedBy": "parentService"
     }
   }
 }

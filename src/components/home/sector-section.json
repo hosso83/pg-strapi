@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_home_sector_sections",
+  "info": {
+    "displayName": "Sector Section"
+  },
+  "options": {},
+  "attributes": {
+    "sectionHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "sectors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sector.sector"
+    }
+  },
+  "config": {}
+}

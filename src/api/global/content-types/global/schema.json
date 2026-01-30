@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "global"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteName": {
+      "type": "string"
+    },
+    "siteTagLine": {
+      "type": "text"
+    },
+    "footer": {
+      "type": "component",
+      "component": "footer.footer",
+      "repeatable": true
+    }
+  }
+}

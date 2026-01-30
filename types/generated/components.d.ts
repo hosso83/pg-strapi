@@ -25,8 +25,7 @@ export interface AboutHero extends Struct.ComponentSchema {
     icon: 'layout';
   };
   attributes: {
-    backgroundImage: Schema.Attribute.Media<'images'> &
-      Schema.Attribute.Required;
+    backgroundImage: Schema.Attribute.Media<'images'>;
     description: Schema.Attribute.Text;
     eyebrow: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -131,6 +130,22 @@ export interface CareersHero extends Struct.ComponentSchema {
   };
 }
 
+export interface CareersJobPositionSection extends Struct.ComponentSchema {
+  collectionName: 'components_careers_job_position_sections';
+  info: {
+    displayName: 'Job Position Section';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    eyebrow: Schema.Attribute.String;
+    job_positions: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::job-position.job-position'
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ContactFormConfig extends Struct.ComponentSchema {
   collectionName: 'components_contact_form_configs';
   info: {
@@ -144,6 +159,20 @@ export interface ContactFormConfig extends Struct.ComponentSchema {
     successDescription: Schema.Attribute.Text;
     successTitle: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface FooterFooter extends Struct.ComponentSchema {
+  collectionName: 'components_footer_footers';
+  info: {
+    displayName: 'Footer';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    footerSections: Schema.Attribute.Component<'footer.link-column', true>;
+    logo: Schema.Attribute.Media<'images'>;
+    siteName: Schema.Attribute.String;
+    socialLinks: Schema.Attribute.Component<'shared.social-link', true>;
   };
 }
 
@@ -206,6 +235,16 @@ export interface HomeFeatureItem extends Struct.ComponentSchema {
   };
 }
 
+export interface HomeFeatureSection extends Struct.ComponentSchema {
+  collectionName: 'components_home_feature_sections';
+  info: {
+    displayName: 'Feature Section';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<'home.feature-item', true>;
+  };
+}
+
 export interface HomeHero extends Struct.ComponentSchema {
   collectionName: 'components_home_heroes';
   info: {
@@ -220,6 +259,28 @@ export interface HomeHero extends Struct.ComponentSchema {
     secondaryCta: Schema.Attribute.Component<'shared.cta-button', false>;
     subtitle: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface HomeInsightsSection extends Struct.ComponentSchema {
+  collectionName: 'components_home_insights_sections';
+  info: {
+    displayName: 'Insights Section';
+  };
+  attributes: {
+    insights: Schema.Attribute.Relation<'oneToMany', 'api::insight.insight'>;
+    sectionHeader: Schema.Attribute.Component<'shared.section-header', false>;
+  };
+}
+
+export interface HomeSectorSection extends Struct.ComponentSchema {
+  collectionName: 'components_home_sector_sections';
+  info: {
+    displayName: 'Sector Section';
+  };
+  attributes: {
+    sectionHeader: Schema.Attribute.Component<'shared.section-header', false>;
+    sectors: Schema.Attribute.Relation<'oneToMany', 'api::sector.sector'>;
   };
 }
 
@@ -301,6 +362,10 @@ export interface SharedSectionHeader extends Struct.ComponentSchema {
     action: Schema.Attribute.Component<'shared.cta-button', false>;
     description: Schema.Attribute.Text;
     eyebrow: Schema.Attribute.String;
+    jobs: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::job-position.job-position'
+    >;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -377,12 +442,17 @@ declare module '@strapi/strapi' {
       'careers.application-section': CareersApplicationSection;
       'careers.benefits-section': CareersBenefitsSection;
       'careers.hero': CareersHero;
+      'careers.job-position-section': CareersJobPositionSection;
       'contact.form-config': ContactFormConfig;
+      'footer.footer': FooterFooter;
       'footer.link-column': FooterLinkColumn;
       'home.cta-section': HomeCtaSection;
       'home.excellence-section': HomeExcellenceSection;
       'home.feature-item': HomeFeatureItem;
+      'home.feature-section': HomeFeatureSection;
       'home.hero': HomeHero;
+      'home.insights-section': HomeInsightsSection;
+      'home.sector-section': HomeSectorSection;
       'projects.hero': ProjectsHero;
       'shared.cta-button': SharedCtaButton;
       'shared.cta-section': SharedCtaSection;

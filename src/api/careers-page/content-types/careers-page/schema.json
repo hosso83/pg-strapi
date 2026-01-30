@@ -24,7 +24,7 @@
     "positionSection": {
       "type": "component",
       "component": "shared.section-header",
-      "repeatable": true
+      "repeatable": false
     },
     "applicationSection": {
       "type": "component",

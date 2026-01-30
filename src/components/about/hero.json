@@ -20,8 +20,10 @@
     "backgroundImage": {
       "type": "media",
       "multiple": false,
-      "required": true,
-      "allowedTypes": ["images"]
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

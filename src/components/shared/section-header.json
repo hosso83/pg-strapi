@@ -19,8 +19,13 @@
     },
     "action": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.cta-button"
+      "component": "shared.cta-button",
+      "repeatable": false
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-position.job-position"
     }
   }
 }
