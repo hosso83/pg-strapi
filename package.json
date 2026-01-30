@@ -6,7 +6,7 @@
   "scripts": {
     "build": "strapi build",
     "console": "strapi console",
-    "deploy": "strapi deploy",
+    "deploy": "strapi transfer --to https://proper-family-84461e67ed.strapiapp.com/admin",
     "dev": "strapi develop",
     "develop": "strapi develop",
     "start": "strapi start",
