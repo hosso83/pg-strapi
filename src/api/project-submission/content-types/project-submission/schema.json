@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_submissions",
+  "info": {
+    "singularName": "project-submission",
+    "pluralName": "project-submissions",
+    "displayName": "Project Submission"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "refId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "wantConsultancy": {
+      "type": "boolean",
+      "default": false
+    },
+    "wantInvestors": {
+      "type": "boolean",
+      "default": false
+    },
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "sector": {
+      "type": "string"
+    },
+    "services": {
+      "type": "json"
+    },
+    "budget": {
+      "type": "string"
+    },
+    "projectStage": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "documents": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "reviewStatus": {
+      "type": "enumeration",
+      "default": "new",
+      "enum": [
+        "new",
+        "reviewing",
+        "contacted",
+        "approved",
+        "rejected"
+      ]
+    }
+  }
+}

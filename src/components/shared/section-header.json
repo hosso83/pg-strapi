@@ -21,11 +21,6 @@
       "type": "component",
       "component": "shared.cta-button",
       "repeatable": false
-    },
-    "jobs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::job-position.job-position"
     }
   }
 }

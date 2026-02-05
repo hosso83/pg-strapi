@@ -1,0 +1,2111 @@
+{
+	"version": 2,
+	"data": {
+		"api::team-page.team-page": {
+			"1": {
+				"id": 1,
+				"documentId": "nu3vngvokitunu0m7yna51t5",
+				"title": "Our team",
+				"description": "Meet the leaders driving innovation and excellence",
+				"createdAt": "2026-01-28T12:57:00.571Z",
+				"updatedAt": "2026-01-28T13:00:43.255Z",
+				"publishedAt": null,
+				"locale": null,
+				"cta": 6,
+				"team_members": [
+					9,
+					1,
+					3,
+					7,
+					11,
+					5
+				],
+				"hero": 4,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::team-member.team-member": {
+			"1": {
+				"id": 1,
+				"documentId": "h1mrl7mccackbmuey8z2jckr",
+				"name": "Dr. Sarah Chen",
+				"slug": "dr-sarah-chen",
+				"role": "Chief Executive Officer",
+				"department": "Executive",
+				"bio": "Dr. Chen brings over 25 years of experience in global infrastructure development. Previously served as Regional Director at a Fortune 500 engineering firm. PhD in Civil Engineering from MIT.",
+				"imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&q=80",
+				"linkedin": "https://linkedin.com/in/sarahchen",
+				"email": null,
+				"specializations": [
+					"Strategic Leadership",
+					"Infrastructure Development",
+					"Sustainability"
+				],
+				"order": 1,
+				"featured": true,
+				"createdAt": "2026-01-27T07:58:53.658Z",
+				"updatedAt": "2026-01-28T13:39:42.087Z",
+				"publishedAt": null,
+				"locale": null,
+				"image": 30,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"3": {
+				"id": 3,
+				"documentId": "zfbcnsugne2t4ga3dv167qlw",
+				"name": "James Morrison",
+				"slug": "james-morrison",
+				"role": "Chief Operating Officer",
+				"department": "Executive",
+				"bio": "James oversees global operations across 140+ countries. Former operations director at major international consultancy. MBA from London Business School with 20+ years in project delivery.",
+				"imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&q=80",
+				"linkedin": "https://linkedin.com/in/jamesmorrison",
+				"email": null,
+				"specializations": [
+					"Operations Management",
+					"Project Delivery",
+					"Business Development"
+				],
+				"order": 2,
+				"featured": true,
+				"createdAt": "2026-01-27T07:59:42.282Z",
+				"updatedAt": "2026-01-28T13:39:53.067Z",
+				"publishedAt": null,
+				"locale": null,
+				"image": 25,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"5": {
+				"id": 5,
+				"documentId": "ynrokdlph1dp83hdu554egtt",
+				"name": "Dr. Amara Okonkwo",
+				"slug": "dr-amara-okonkwo",
+				"role": "Chief Technology Officer",
+				"department": "Technology",
+				"bio": "Dr. Okonkwo leads digital transformation initiatives and emerging technology integration. Former tech lead at Google. PhD in Computer Science from Stanford with expertise in AI/ML applications.",
+				"imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&q=80",
+				"linkedin": "https://linkedin.com/in/amaraokonkwo",
+				"email": null,
+				"specializations": [
+					"Digital Transformation",
+					"AI/ML",
+					"Engineering Software"
+				],
+				"order": 3,
+				"featured": true,
+				"createdAt": "2026-01-27T08:00:28.367Z",
+				"updatedAt": "2026-01-28T13:39:11.257Z",
+				"publishedAt": null,
+				"locale": null,
+				"image": 26,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"7": {
+				"id": 7,
+				"documentId": "m20itgemh6jrmph94le9qh9q",
+				"name": "Michael Torres",
+				"slug": "michael-torres",
+				"role": "Director of Mining & Resources",
+				"department": "Mining",
+				"bio": "Michael leads our mining practice with 18 years of experience in mineral exploration and resource development across Africa, Asia, and South America. MSc in Mining Engineering from Colorado School of Mines.",
+				"imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&q=80",
+				"linkedin": "https://linkedin.com/in/michaeltorres",
+				"email": null,
+				"specializations": [
+					"Mining Engineering",
+					"Resource Estimation",
+					"Feasibility Studies"
+				],
+				"order": 4,
+				"featured": true,
+				"createdAt": "2026-01-27T08:01:10.562Z",
+				"updatedAt": "2026-01-28T13:40:13.974Z",
+				"publishedAt": null,
+				"locale": null,
+				"image": 27,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"9": {
+				"id": 9,
+				"documentId": "qfupr5c0d6sjqjnxrvc0oren",
+				"name": "Dr. Elena Petrova",
+				"slug": "dr-elena-petrova",
+				"role": "Director of Environmental Services",
+				"department": "Environmental",
+				"bio": "Dr. Petrov specializes in environmental impact assessment and sustainable development. Published researcher with 50+ peer-reviewed papers. PhD in Environmental Science from ETH Zurich.",
+				"imageUrl": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&fit=crop&q=80",
+				"linkedin": "https://linkedin.com/in/elenapetrova",
+				"email": null,
+				"specializations": [
+					"Environmental Assessment",
+					"Sustainability",
+					"Climate Resilience"
+				],
+				"order": 5,
+				"featured": true,
+				"createdAt": "2026-01-27T08:02:01.657Z",
+				"updatedAt": "2026-01-28T13:39:24.610Z",
+				"publishedAt": null,
+				"locale": null,
+				"image": 29,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"11": {
+				"id": 11,
+				"documentId": "yr7ln0i37zuupm8afetc6hwb",
+				"name": "Robert Nakamura",
+				"slug": "robert-nakamura",
+				"role": "Director of Geotechnical Engineering",
+				"department": "Geotechnical",
+				"bio": "Robert leads our geotechnical practice with expertise in foundation design and ground improvement. 22 years of experience on major infrastructure projects. PE licensed in multiple jurisdictions.",
+				"imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&q=80",
+				"linkedin": "https://linkedin.com/in/robertnakamura",
+				"email": null,
+				"specializations": [
+					"Foundation Engineering",
+					"Slope Stability",
+					"Ground Improvement"
+				],
+				"order": 6,
+				"featured": true,
+				"createdAt": "2026-01-27T08:02:45.965Z",
+				"updatedAt": "2026-01-28T13:40:30.809Z",
+				"publishedAt": null,
+				"locale": null,
+				"image": 28,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"about.hero": {},
+		"shared.cta-section": {},
+		"plugin::upload.file": {
+			"9": {
+				"id": 9,
+				"name": "photo-1497366216548-37526070297c.jpg",
+				"alternativeText": "Modern office with dark walls, glass corridor, and a sleek, dark kitchen.",
+				"caption": "This modern office blends dark lounge, glass corridor, and sleek kitchen areas, combining style with practical functionality.",
+				"hash": "photo_1497366216548_37526070297c_a1652e9c46",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/photo_1497366216548_37526070297c_a1652e9c46.jpg",
+				"createdAt": "2026-01-27T08:24:38.902Z",
+				"updatedAt": "2026-01-27T08:24:47.602Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"10": {
+				"id": 10,
+				"name": "photo-1472214103451-9374bd1c798e.jpg",
+				"alternativeText": "Vibrant green hills with a spiral grass pattern, rocky outcrop, and sunset.",
+				"caption": "A mesmerizing spiral pattern in vibrant green grass leads to a beautiful sunset over a scenic valley with ancient rocky formations.",
+				"hash": "photo_1472214103451_9374bd1c798e_296a873fba",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/photo_1472214103451_9374bd1c798e_296a873fba.jpg",
+				"createdAt": "2026-01-27T08:24:38.914Z",
+				"updatedAt": "2026-01-27T08:24:45.312Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"12": {
+				"id": 12,
+				"name": "photo-1581091226825-a6a2a5aee158.jpg",
+				"alternativeText": "A woman with glasses works on a laptop amidst industrial machinery in a modern factory.",
+				"caption": "A focused engineer works on a laptop amidst intricate machinery, demonstrating expertise in a high-tech manufacturing environment.",
+				"hash": "photo_1581091226825_a6a2a5aee158_2a398826b4",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/photo_1581091226825_a6a2a5aee158_2a398826b4.jpg",
+				"createdAt": "2026-01-27T08:24:41.938Z",
+				"updatedAt": "2026-01-27T08:24:45.306Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"13": {
+				"id": 13,
+				"name": "copper-mine-mongolia.jpg",
+				"alternativeText": "Large haul trucks operate in a vast open-pit mine with terraced levels and distant mountains.",
+				"caption": "Massive haul trucks transport ore within a multi-level open-pit mine, showcasing the scale of modern extraction operations.",
+				"hash": "copper_mine_mongolia_deb4e55f50",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/copper_mine_mongolia_deb4e55f50.jpg",
+				"createdAt": "2026-01-27T08:24:55.525Z",
+				"updatedAt": "2026-01-27T08:24:59.855Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"14": {
+				"id": 14,
+				"name": "offshore-wind-uk.jpg",
+				"alternativeText": "Numerous white wind turbines with yellow bases stand in a blue ocean under a cloudy sky.",
+				"caption": "Modern offshore wind turbines with white blades stand in the blue ocean, generating clean, renewable energy. They efficiently harness wind power.",
+				"hash": "offshore_wind_uk_c60aa0ae74",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/offshore_wind_uk_c60aa0ae74.jpg",
+				"createdAt": "2026-01-27T08:24:55.908Z",
+				"updatedAt": "2026-01-27T08:25:01.931Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"18": {
+				"id": 18,
+				"name": "highway-brazil.jpg",
+				"alternativeText": "Modern cable-stayed bridges intersect over a vast, dense green forest under a clear sky.",
+				"caption": "A complex system of modern cable-stayed bridges dramatically intersects above a sprawling, vibrant green rainforest, showcasing impressive engineering.",
+				"hash": "highway_brazil_34d5ca53c0",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/highway_brazil_34d5ca53c0.jpg",
+				"createdAt": "2026-01-27T08:24:55.969Z",
+				"updatedAt": "2026-01-27T08:25:01.106Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"21": {
+				"id": 21,
+				"name": "smart-city-uae.jpg",
+				"alternativeText": "Aerial view of modern buildings with undulating green roofs and integrated courtyards at dusk.",
+				"caption": "An aerial view of a contemporary urban development featuring sleek buildings with lush green roofs and integrated courtyards at twilight.",
+				"hash": "smart_city_uae_b40c815428",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/smart_city_uae_b40c815428.jpg",
+				"createdAt": "2026-01-27T08:25:01.189Z",
+				"updatedAt": "2026-01-27T08:25:05.231Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"22": {
+				"id": 22,
+				"name": "solar-farm-chile.jpg",
+				"alternativeText": "Rows of solar panels stretch across a desert landscape at sunset with mountains in the background.",
+				"caption": "A vast solar panel farm extends across the desert landscape, capturing sunlight under a warm, mountainous sky.",
+				"hash": "solar_farm_chile_31461a481f",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/solar_farm_chile_31461a481f.jpg",
+				"createdAt": "2026-01-27T08:25:01.577Z",
+				"updatedAt": "2026-01-27T08:25:06.159Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"24": {
+				"id": 24,
+				"name": "water-treatment-kenya.jpg",
+				"alternativeText": "Aerial view of a modern water treatment plant with blue filtration basins under clear sky.",
+				"caption": "A contemporary water treatment facility featuring multiple vibrant blue filtration tanks, ensuring clean water supply for the community.",
+				"hash": "water_treatment_kenya_1039e3ad30",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/water_treatment_kenya_1039e3ad30.jpg",
+				"createdAt": "2026-01-27T08:25:02.441Z",
+				"updatedAt": "2026-01-27T08:25:05.772Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"25": {
+				"id": 25,
+				"name": "photo-1472099645785-5658abf4ff4e.jpg",
+				"alternativeText": "Smiling man with glasses and grey hair wearing a green polo shirt, looking right.",
+				"caption": "A confident man with glasses and grey hair smiles subtly, looking right, appearing thoughtful and approachable in his dark green polo.",
+				"hash": "photo_1472099645785_5658abf4ff4e_6c5e4882f9",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/photo_1472099645785_5658abf4ff4e_6c5e4882f9.jpg",
+				"createdAt": "2026-01-28T13:38:43.429Z",
+				"updatedAt": "2026-01-28T13:38:49.369Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"26": {
+				"id": 26,
+				"name": "photo-1507003211169-0a1dd7228f2d.jpg",
+				"alternativeText": "A smiling man with short dark hair and a light beard in a white shirt.",
+				"caption": "A friendly man with short dark hair and a light beard smiles warmly at the viewer.",
+				"hash": "photo_1507003211169_0a1dd7228f2d_3fcb6bf52c",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/photo_1507003211169_0a1dd7228f2d_3fcb6bf52c.jpg",
+				"createdAt": "2026-01-28T13:38:43.762Z",
+				"updatedAt": "2026-01-28T13:38:48.527Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"27": {
+				"id": 27,
+				"name": "photo-1500648767791-00dcc994a43e.jpg",
+				"alternativeText": "A smiling man with brown hair and a gray cardigan against a neutral background.",
+				"caption": "A professional headshot captures a smiling man with neat brown hair wearing a stylish gray cardigan.",
+				"hash": "photo_1500648767791_00dcc994a43e_3d045550b1",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/photo_1500648767791_00dcc994a43e_3d045550b1.jpg",
+				"createdAt": "2026-01-28T13:38:43.768Z",
+				"updatedAt": "2026-01-28T13:38:47.826Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"28": {
+				"id": 28,
+				"name": "photo-1506794778202-cad84cf45f1d.jpg",
+				"alternativeText": "A bearded man in a grey textured sweater looks directly at the viewer.",
+				"caption": "A serious young man with a beard is depicted in a close-up, wearing a stylish grey textured sweater.",
+				"hash": "photo_1506794778202_cad84cf45f1d_17da9a2a61",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/photo_1506794778202_cad84cf45f1d_17da9a2a61.jpg",
+				"createdAt": "2026-01-28T13:38:43.774Z",
+				"updatedAt": "2026-01-28T13:38:50.620Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"29": {
+				"id": 29,
+				"name": "photo-1573496359142-b8d87734a5a2.jpg",
+				"alternativeText": "Smiling young woman in a grey blazer stands before a window with city buildings.",
+				"caption": "A professional young woman in a grey blazer smiles warmly, with a modern office background showcasing city architecture.",
+				"hash": "photo_1573496359142_b8d87734a5a2_e4f1e1ba39",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/photo_1573496359142_b8d87734a5a2_e4f1e1ba39.jpg",
+				"createdAt": "2026-01-28T13:38:43.785Z",
+				"updatedAt": "2026-01-28T13:39:21.823Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"30": {
+				"id": 30,
+				"name": "photo-1594744803329-e58b31de8bf5.jpg",
+				"alternativeText": "Smiling woman with long blonde hair wearing a blue denim shirt.",
+				"caption": "A smiling woman with long blonde hair wears a blue denim top, exuding a friendly and approachable demeanor.",
+				"hash": "photo_1594744803329_e58b31de8bf5_e3f617a2ec",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "/uploads/photo_1594744803329_e58b31de8bf5_e3f617a2ec.jpg",
+				"createdAt": "2026-01-28T13:38:43.804Z",
+				"updatedAt": "2026-01-28T13:39:39.462Z",
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"shared.cta-button": {},
+		"plugin::upload.folder": {},
+		"api::subservice.subservice": {},
+		"api::service.service": {
+			"1": {
+				"id": 1,
+				"documentId": "vcpuousk45j72lohpqfnmtr8",
+				"name": "Geophysics",
+				"slug": "geophysics",
+				"shortDescription": "Advanced subsurface imaging and characterization using cutting-edge geophysical methods.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our geophysics team provides non-invasive subsurface investigation using state-of-the-art equipment and interpretation techniques. We design multi-method surveys tailored to specific site conditions and project objectives, delivering actionable insights for exploration, engineering, and environmental applications."
+							}
+						]
+					}
+				],
+				"icon": "Waves",
+				"typicalWork": [
+					"Non-invasive subsurface investigation",
+					"Multi-method survey design and execution",
+					"Advanced data processing and 3D modeling",
+					"Integration with geological and geotechnical data",
+					"Mineral exploration and resource estimation support"
+				],
+				"order": 1,
+				"createdAt": "2026-01-27T07:53:16.972Z",
+				"updatedAt": "2026-01-27T07:53:16.972Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"subservices": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"3": {
+				"id": 3,
+				"documentId": "kskyiyxgc9h03z864krsigv5",
+				"name": "Geotechnical",
+				"slug": "geotechnical",
+				"shortDescription": "Comprehensive ground investigation and engineering solutions for complex terrain.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our geotechnical engineering team provides detailed site characterization and ground engineering solutions for projects in challenging terrain. We combine field investigation with laboratory testing and advanced analysis to understand ground conditions and develop appropriate design solutions."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our geotechnical engineering team provides detailed site characterization and ground engineering solutions for projects in challenging terrain. We combine field investigation with laboratory testing and advanced analysis to understand ground conditions and develop appropriate design solutions."
+							}
+						]
+					}
+				],
+				"icon": "Mountain",
+				"typicalWork": [
+					"Detailed site characterization programs",
+					"Laboratory testing and analysis",
+					"Geotechnical risk assessment",
+					"Foundation and earthworks design support",
+					"Construction monitoring and verification"
+				],
+				"order": 2,
+				"createdAt": "2026-01-27T07:53:46.991Z",
+				"updatedAt": "2026-01-27T07:53:46.991Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"subservices": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"5": {
+				"id": 5,
+				"documentId": "m7xlzuipj5ya8brcab1vny0d",
+				"name": "Civil & Infrastructure",
+				"slug": "civil-and-infrastructure",
+				"shortDescription": "End-to-end civil engineering from concept design through construction supervision.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our civil and infrastructure team delivers comprehensive engineering services from initial feasibility through construction and commissioning. We bring expertise in roads, utilities, buildings, and industrial facilities, with a focus on constructability and whole-life value."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our civil and infrastructure team delivers comprehensive engineering services from initial feasibility through construction and commissioning. We bring expertise in roads, utilities, buildings, and industrial facilities, with a focus on constructability and whole-life value."
+							}
+						]
+					}
+				],
+				"icon": "Building2",
+				"typicalWork": [
+					"Feasibility studies and concept design",
+					"Detailed engineering and specifications",
+					"Tender documentation and procurement support",
+					"Construction management and supervision",
+					"Asset management and rehabilitation planning"
+				],
+				"order": 3,
+				"createdAt": "2026-01-27T07:54:25.167Z",
+				"updatedAt": "2026-01-27T07:54:25.167Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"subservices": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"7": {
+				"id": 7,
+				"documentId": "gsib7xx6awcu1nrxj4ogvcqo",
+				"name": "Water & Hydro",
+				"slug": "water-and-hydro",
+				"shortDescription": "Integrated water resource assessment, development, and management solutions.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our water and hydrology team provides comprehensive services addressing water supply, flood management, and sustainable water resource development. We combine hydrogeological expertise with hydraulic engineering to deliver integrated water solutions."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our water and hydrology team provides comprehensive services addressing water supply, flood management, and sustainable water resource development. We combine hydrogeological expertise with hydraulic engineering to deliver integrated water solutions."
+							}
+						]
+					}
+				],
+				"icon": "Droplets",
+				"typicalWork": [
+					"Groundwater exploration and development",
+					"Hydrological and hydrogeological studies",
+					"Water supply system design",
+					"Flood risk assessment and mitigation",
+					"Sustainable water management planning"
+				],
+				"order": 4,
+				"createdAt": "2026-01-27T07:55:01.956Z",
+				"updatedAt": "2026-01-27T07:55:01.956Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"subservices": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"9": {
+				"id": 9,
+				"documentId": "b18nyzp6b0rm57zoi8gkdhs8",
+				"name": "Environmental",
+				"slug": "environmental",
+				"shortDescription": "Environmental assessment, compliance, and sustainable development services.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our environmental team helps clients navigate complex regulatory requirements while delivering sustainable project outcomes. We provide impact assessment, permitting support, and environmental management services across all sectors."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our environmental team helps clients navigate complex regulatory requirements while delivering sustainable project outcomes. We provide impact assessment, permitting support, and environmental management services across all sectors."
+							}
+						]
+					}
+				],
+				"icon": "Leaf",
+				"typicalWork": [
+					"Environmental and social impact assessments",
+					"Baseline studies and monitoring programs",
+					"Contamination assessment and remediation",
+					"Permitting and regulatory compliance",
+					"Biodiversity and ecosystem services"
+				],
+				"order": 5,
+				"createdAt": "2026-01-27T07:55:39.174Z",
+				"updatedAt": "2026-01-27T07:55:39.174Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"subservices": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"11": {
+				"id": 11,
+				"documentId": "vhxqaf6n74ef0vvlyyuuer7a",
+				"name": "Surveying & GIS",
+				"slug": "surveying-and-gis",
+				"shortDescription": "Precision surveying and spatial data solutions for informed decision-making.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our surveying and GIS team provides accurate spatial data acquisition, analysis, and visualization services. We combine traditional surveying techniques with modern technologies including GPS, UAV, and satellite imagery to deliver comprehensive spatial solutions."
+							}
+						]
+					}
+				],
+				"icon": "Map",
+				"typicalWork": [
+					"High-accuracy topographic and cadastral surveys",
+					"GNSS/RTK positioning and control networks",
+					"GIS database development and analysis",
+					"Remote sensing and image interpretation",
+					"Spatial data management and visualization"
+				],
+				"order": 6,
+				"createdAt": "2026-01-27T07:56:10.063Z",
+				"updatedAt": "2026-01-27T08:21:53.965Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"subservices": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"13": {
+				"id": 13,
+				"documentId": "rnijynrm2hfnk2izpasqgzw7",
+				"name": "Mining & Exploration Support",
+				"slug": "mining-and-exploration-support",
+				"shortDescription": "Technical expertise supporting mineral exploration and mine development programs.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our mining and exploration support team provides specialized technical services for mineral exploration and mine development projects. We bring expertise in geology, resource estimation, and mine planning to help clients advance their projects from discovery to development."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our mining and exploration support team provides specialized technical services for mineral exploration and mine development projects. We bring expertise in geology, resource estimation, and mine planning to help clients advance their projects from discovery to development."
+							}
+						]
+					}
+				],
+				"icon": "Pickaxe",
+				"typicalWork": [
+					"Exploration target generation and ranking",
+					"Drill program planning and optimization",
+					"Core logging and geological modeling",
+					"QA/QC protocols and data management",
+					"Resource estimation support"
+				],
+				"order": 7,
+				"createdAt": "2026-01-27T07:56:45.798Z",
+				"updatedAt": "2026-01-27T07:56:45.798Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"subservices": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"15": {
+				"id": 15,
+				"documentId": "tovkqclsy87e3dyppccygfw0",
+				"name": "Project Delivery",
+				"slug": "project-delivery",
+				"shortDescription": "Professional project management ensuring successful delivery of complex projects.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our project delivery team provides comprehensive project management services ensuring successful delivery of complex, multi-disciplinary projects. We combine technical expertise with project management best practices to deliver projects on time, within budget, and to specification."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our project delivery team provides comprehensive project management services ensuring successful delivery of complex, multi-disciplinary projects. We combine technical expertise with project management best practices to deliver projects on time, within budget, and to specification."
+							}
+						]
+					}
+				],
+				"icon": "ClipboardList",
+				"typicalWork": [
+					"Feasibility studies and business case development",
+					"Procurement strategy and contractor management",
+					"Construction monitoring and quality assurance",
+					"Health, safety, and environment planning",
+					"Project controls and reporting"
+				],
+				"order": 8,
+				"createdAt": "2026-01-27T07:57:21.144Z",
+				"updatedAt": "2026-01-27T08:21:47.792Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [
+					1
+				],
+				"subservices": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::project.project": {
+			"1": {
+				"id": 1,
+				"documentId": "ny4kemj9564ii3icnf50frn8",
+				"title": "Atacama Solar Complex 1123",
+				"slug": "atacama-solar-complex",
+				"country": "Chile",
+				"city": "Atacama Desert",
+				"region": "americas",
+				"year": 2023,
+				"shortSummary": "Latin America's largest photovoltaic installation delivering 450MW of clean energy to the national grid, powering over 300,000 homes.",
+				"overview": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "The Atacama Solar Complex represents a landmark achievement in renewable energy infrastructure for South America. Located in the world's driest desert with exceptional solar irradiance levels, this 450MW facility spans over 1,000 hectares and incorporates cutting-edge bifacial panel technology."
+							}
+						]
+					}
+				],
+				"challenge": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "The project faced significant engineering challenges including extreme temperature variations, seismic activity considerations, remote location logistics, and the need to integrate with Chile's complex electrical grid while maintaining environmental compliance in a sensitive desert ecosystem."
+							}
+						]
+					}
+				],
+				"approach": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our team deployed advanced geotechnical surveys, developed custom foundation solutions for seismic resilience, and implemented a modular construction approach to overcome logistical challenges. We utilized digital twin technology for real-time monitoring and predictive maintenance planning."
+							}
+						]
+					}
+				],
+				"outcomes": [
+					"450MW installed capacity operational",
+					"Reduces CO2 emissions by 600,000 tonnes annually",
+					"Created 2,500 construction jobs and 150 permanent positions",
+					"Achieved 99.2% grid availability in first year",
+					"Completed 3 months ahead of schedule"
+				],
+				"tags": [
+					"Renewable Energy",
+					"Solar PV",
+					"Grid Integration"
+				],
+				"featured": true,
+				"createdAt": "2026-01-27T08:21:26.094Z",
+				"updatedAt": "2026-01-27T14:26:31.757Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": 22,
+				"gallery": null,
+				"sector": 3,
+				"services": [
+					5,
+					9,
+					15
+				],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"4": {
+				"id": 4,
+				"documentId": "y9larenuctroxg3mlazgn4uf",
+				"title": "North Sea Offshore Wind Farm",
+				"slug": "north-sea-offshore-wind-farm",
+				"country": "United Kingdom",
+				"city": "East Yorkshire Coast",
+				"region": "europe",
+				"year": 2024,
+				"shortSummary": "A 1.2GW offshore wind installation featuring 80 next-generation turbines, contributing significantly to UK's net-zero targets.",
+				"overview": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "This flagship offshore wind development represents one of Europe's largest single-phase wind farm installations. The project features 80 state-of-the-art 15MW turbines positioned in water depths of 25-40 meters."
+							}
+						]
+					}
+				],
+				"challenge": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Engineering challenges included harsh North Sea conditions, complex seabed geology, marine wildlife protection requirements, and coordination of multiple specialized vessels during a tight weather-dependent construction window."
+							}
+						]
+					}
+				],
+				"approach": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "We employed advanced metocean analysis, innovative monopile foundation designs, and real-time environmental monitoring systems. Our digital delivery team created comprehensive BIM models integrated with marine operations planning."
+							}
+						]
+					}
+				],
+				"outcomes": [
+					"1.2GW capacity powering 1.3 million homes",
+					"40-year operational lifespan design",
+					"Zero lost-time incidents during construction",
+					"Established new UK supply chain partnerships",
+					"Marine habitat enhancement through artificial reef creation"
+				],
+				"tags": [
+					"Offshore Wind",
+					"Renewable Energy",
+					"Marine Engineering"
+				],
+				"featured": true,
+				"createdAt": "2026-01-27T08:24:08.013Z",
+				"updatedAt": "2026-01-27T08:25:23.387Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": 14,
+				"gallery": null,
+				"sector": 3,
+				"services": [
+					5,
+					15,
+					9
+				],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"8": {
+				"id": 8,
+				"documentId": "xf1349zqwu50ol194bqjizj8",
+				"title": "Oyu Tolgoi Copper-Gold Mine",
+				"slug": "oyu-tolgoi-copper-gold-mine",
+				"country": "Mongolia",
+				"city": "South Gobi Desert",
+				"region": "asia-pacific",
+				"year": 2022,
+				"shortSummary": "Technical advisory for one of the world's largest copper-gold mining operations, implementing sustainable extraction methodologies.",
+				"overview": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Oyu Tolgoi is a world-class copper and gold mining operation in Mongolia's South Gobi Desert. Our involvement focused on the underground expansion project, one of the most technically challenging mining developments globally."
+							}
+						]
+					}
+				],
+				"challenge": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "The project presented unique challenges including extreme continental climate (-40°C to +40°C), complex geological conditions, remote infrastructure requirements, and the need to balance economic development with environmental stewardship in a fragile desert ecosystem."
+							}
+						]
+					}
+				],
+				"approach": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our multidisciplinary team provided geotechnical engineering, water management solutions, and economic feasibility analysis. We implemented innovative block-cave mining techniques and developed comprehensive environmental management systems."
+							}
+						]
+					}
+				],
+				"outcomes": [
+					"Extended mine life by 30 years",
+					"Reduced water consumption by 35% through recycling",
+					"Created 4,000 direct employment opportunities",
+					"Established world-class safety standards",
+					"Implemented progressive rehabilitation program"
+				],
+				"tags": [
+					"Mining",
+					"Geotechnical",
+					"Sustainability"
+				],
+				"featured": false,
+				"createdAt": "2026-01-27T08:27:42.002Z",
+				"updatedAt": "2026-01-28T06:29:37.580Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": 13,
+				"gallery": null,
+				"sector": 1,
+				"services": [
+					3,
+					13,
+					9
+				],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"10": {
+				"id": 10,
+				"documentId": "li087deam22csrqfhwrzlkjb",
+				"title": "Mombasa Water Supply Programme",
+				"slug": "mombasa-water-supply-programme",
+				"country": "Kenya",
+				"city": "Mombasa",
+				"region": "africa",
+				"year": 2023,
+				"shortSummary": "Comprehensive water infrastructure upgrade serving 1.5 million residents with improved access to clean, reliable water supply.",
+				"overview": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "\"The Mombasa Water Supply Programme addresses critical water scarcity challenges facing Kenya's second-largest city. This comprehensive infrastructure upgrade includes new treatment facilities, transmission pipelines, and distribution network rehabilitation."
+							}
+						]
+					}
+				],
+				"challenge": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "The project navigated challenges including aging infrastructure, informal settlements requiring sensitive community engagement, limited financial resources, and the need to maintain service continuity during construction phases."
+							}
+						]
+					}
+				],
+				"approach": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "We employed participatory planning approaches, phased construction to maintain service, and capacity building programs for local water utility staff. Innovative financing mechanisms were developed in partnership with international development agencies."
+							}
+						]
+					}
+				],
+				"outcomes": [
+					"1.5 million people with improved water access",
+					"Non-revenue water reduced from 45% to 22%",
+					"24/7 water supply achieved in 80% of service area",
+					"200 local technicians trained",
+					"Model replicated in three other Kenyan cities"
+				],
+				"tags": [
+					"Water Supply",
+					"International Development",
+					"Urban Infrastructure"
+				],
+				"featured": true,
+				"createdAt": "2026-01-27T08:29:40.382Z",
+				"updatedAt": "2026-01-27T08:29:40.382Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": 24,
+				"gallery": null,
+				"sector": 5,
+				"services": [
+					7,
+					5,
+					15
+				],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"12": {
+				"id": 12,
+				"documentId": "n0znhfu5zw6b40cc0q1qr1sh",
+				"title": "BR-163 Amazon Highway Upgrade",
+				"slug": "br-163-amazon-highway-upgrade",
+				"country": "Brazil",
+				"city": "Para State",
+				"region": "americas",
+				"year": 2023,
+				"shortSummary": "600km highway improvement through the Amazon, balancing connectivity needs with rainforest preservation.",
+				"overview": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "The BR-163 upgrade project improved a critical agricultural corridor while implementing comprehensive environmental protection measures in the Amazon rainforest region."
+							}
+						]
+					}
+				],
+				"challenge": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Balancing infrastructure improvement with environmental protection in one of the world's most biodiverse regions, while managing stakeholder expectations from agricultural, indigenous, and conservation communities."
+							}
+						]
+					}
+				],
+				"approach": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "We developed innovative wildlife crossing solutions, implemented real-time deforestation monitoring, and engaged extensively with local communities to minimize social and environmental impacts."
+							}
+						]
+					}
+				],
+				"outcomes": [
+					"600km of highway improved",
+					"12 wildlife crossing structures installed",
+					"Zero net deforestation achieved",
+					"Travel time reduced by 40%",
+					"Indigenous community agreements maintained"
+				],
+				"tags": [
+					"Highway",
+					"Environmental",
+					"Sustainable Development"
+				],
+				"featured": true,
+				"createdAt": "2026-01-27T08:31:39.334Z",
+				"updatedAt": "2026-01-27T08:31:39.334Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": 18,
+				"gallery": null,
+				"sector": 7,
+				"services": [
+					5,
+					9,
+					15
+				],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"14": {
+				"id": 14,
+				"documentId": "b9taea4g1y4gd7ec2j7w2adl",
+				"title": "Dubai Metro Blue Line Extension",
+				"slug": "dubai-metro-blue-line-extension",
+				"country": "United Arab Emirates",
+				"city": "Dubai",
+				"region": "middle-east",
+				"year": 2024,
+				"shortSummary": "25km metro extension connecting Dubai Marina to Expo 2020 site with 11 new stations.",
+				"overview": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "The Blue Line extension represents a significant expansion of Dubai's metro network, providing enhanced connectivity to key development areas and reducing road congestion."
+							}
+						]
+					}
+				],
+				"challenge": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Constructing underground infrastructure in challenging ground conditions with high water tables, while minimizing disruption to one of the world's busiest urban areas."
+							}
+						]
+					}
+				],
+				"approach": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Advanced tunnel boring technology, real-time ground monitoring systems, and comprehensive traffic management plans enabled construction with minimal surface disruption."
+							}
+						]
+					}
+				],
+				"outcomes": [
+					"25km of new metro line",
+					"11 stations serving 300,000 daily passengers",
+					"Estimated 15% reduction in road traffic",
+					"Integration with bus and tram networks",
+					"LEED Gold certification for all stations"
+				],
+				"tags": [
+					"Rail",
+					"Urban Transit",
+					"Smart City"
+				],
+				"featured": true,
+				"createdAt": "2026-01-27T08:33:22.148Z",
+				"updatedAt": "2026-01-27T08:33:22.148Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": 21,
+				"gallery": null,
+				"sector": 7,
+				"services": [
+					5,
+					3,
+					15
+				],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::sector.sector": {
+			"1": {
+				"id": 1,
+				"documentId": "byhrlewfljdqrmqf7qjwhcl2",
+				"name": "Mining & Metals",
+				"slug": "mining-and-metals",
+				"shortDescription": "Comprehensive services supporting mining exploration, development, and operations across the resource lifecycle.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our Mining & Metals team brings together geologists, mining engineers, environmental specialists, and project managers to deliver integrated solutions across the mining lifecycle. From early-stage exploration through feasibility, development, operations, and closure, we help clients navigate technical challenges while meeting sustainability commitments."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Our Mining & Metals team brings together geologists, mining engineers, environmental specialists, and project managers to deliver integrated solutions across the mining lifecycle. From early-stage exploration through feasibility, development, operations, and closure, we help clients navigate technical challenges while meeting sustainability commitments."
+							}
+						]
+					}
+				],
+				"icon": "Pickaxe",
+				"typicalWork": [
+					"Exploration target generation and due diligence",
+					"Mineral resource and reserve estimation",
+					"Mine planning and feasibility studies",
+					"Tailings and waste management",
+					"Closure planning and rehabilitation"
+				],
+				"order": 1,
+				"createdAt": "2026-01-27T07:47:48.599Z",
+				"updatedAt": "2026-01-27T07:47:48.599Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"3": {
+				"id": 3,
+				"documentId": "g8z4yfty36u6u5wdt91e3us3",
+				"name": "Renewable Energy",
+				"slug": "renewable-energy",
+				"shortDescription": "Engineering and advisory services for the transition to sustainable energy systems.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Solar PV and concentrated solar power\", \"Onshore and offshore wind\", \"Hydropower and pumped storage\", \"Grid integration and storage solutions\", \"Green hydrogen and alternative fuels"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Solar PV and concentrated solar power\", \"Onshore and offshore wind\", \"Hydropower and pumped storage\", \"Grid integration and storage solutions\", \"Green hydrogen and alternative fuels"
+							}
+						]
+					}
+				],
+				"icon": "Zap",
+				"typicalWork": [
+					"Solar PV and concentrated solar power",
+					"Onshore and offshore wind",
+					"Hydropower and pumped storage",
+					"Grid integration and storage solutions",
+					"Green hydrogen and alternative fuels"
+				],
+				"order": 2,
+				"createdAt": "2026-01-27T07:48:30.418Z",
+				"updatedAt": "2026-01-30T07:26:51.066Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"5": {
+				"id": 5,
+				"documentId": "qvra475juh6iksj2atb36zj1",
+				"name": "Water Resources",
+				"slug": "water-resources",
+				"shortDescription": "Integrated water management solutions from source to sea.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Water is fundamental to human wellbeing and economic development. Our water resources team delivers integrated solutions addressing the full water cycle, from source development and treatment through distribution, use, and return to the environment."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Water is fundamental to human wellbeing and economic development. Our water resources team delivers integrated solutions addressing the full water cycle, from source development and treatment through distribution, use, and return to the environment."
+							}
+						]
+					}
+				],
+				"icon": "Droplets",
+				"typicalWork": [
+					"Groundwater exploration and development",
+					"Water supply and distribution systems",
+					"Wastewater treatment and reuse",
+					"Flood risk management",
+					"Irrigation and agricultural water"
+				],
+				"order": 3,
+				"createdAt": "2026-01-27T07:49:09.624Z",
+				"updatedAt": "2026-01-27T07:49:09.624Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"7": {
+				"id": 7,
+				"documentId": "lp5vook43ipwzeqdugk5491k",
+				"name": "Transport",
+				"slug": "transport",
+				"shortDescription": "Planning, design, and delivery of transport infrastructure connecting communities.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Transport infrastructure is the backbone of economic development and social connectivity. Our transport team delivers projects across all modes including roads, rail, aviation, and maritime, with a focus on sustainable mobility solutions."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Transport infrastructure is the backbone of economic development and social connectivity. Our transport team delivers projects across all modes including roads, rail, aviation, and maritime, with a focus on sustainable mobility solutions."
+							}
+						]
+					}
+				],
+				"icon": "Truck",
+				"typicalWork": [
+					"Roads and highways",
+					"Rail and metro systems",
+					"Ports and maritime",
+					"Airports and aviation",
+					"Bridges and tunnels"
+				],
+				"order": 4,
+				"createdAt": "2026-01-27T07:49:55.176Z",
+				"updatedAt": "2026-01-27T07:49:55.176Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"9": {
+				"id": 9,
+				"documentId": "ehminiteql0uryhtxzsg8ycl",
+				"name": "Urban & Real Estate",
+				"slug": "urban-and-real-estate",
+				"shortDescription": "Creating sustainable, livable urban environments and high-quality buildings.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "As urbanization accelerates globally, we help shape cities that are sustainable, resilient, and livable. Our urban development and real estate teams bring together planners, engineers, and sustainability specialists to deliver exceptional outcomes."
+							}
+						]
+					}
+				],
+				"icon": "Building2",
+				"typicalWork": [
+					"Master planning and urban design",
+					"Commercial and residential development",
+					"Healthcare and education facilities",
+					"Sports and leisure venues",
+					"Industrial and logistics"
+				],
+				"order": 5,
+				"createdAt": "2026-01-27T07:50:47.380Z",
+				"updatedAt": "2026-01-27T07:50:47.380Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"11": {
+				"id": 11,
+				"documentId": "zdhccq317rjuytjg981g0spa",
+				"name": "Oil & Gas",
+				"slug": "oil-and-gas",
+				"shortDescription": "Technical services across the upstream, midstream, and downstream sectors.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "While supporting the energy transition, we continue to provide essential services to the oil and gas sector, helping clients operate safely, efficiently, and responsibly. Our services span the full value chain from exploration through decommissioning."
+							}
+						]
+					}
+				],
+				"icon": "Fuel",
+				"typicalWork": [
+					"Exploration and appraisal support",
+					"Field development planning",
+					"Pipeline and facilities engineering",
+					"Decommissioning and abandonment",
+					"Carbon capture and storage"
+				],
+				"order": 6,
+				"createdAt": "2026-01-27T07:51:25.132Z",
+				"updatedAt": "2026-01-27T07:51:25.132Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"13": {
+				"id": 13,
+				"documentId": "d6uildmjaot6lqhofh7126p7",
+				"name": "Telecommunications",
+				"slug": "telecommunications",
+				"shortDescription": "Infrastructure enabling digital connectivity and communication networks.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Digital connectivity is transforming societies and economies worldwide. Our telecommunications team supports the deployment of communication infrastructure from fiber networks to data centers, enabling the digital transformation of communities and businesses."
+							}
+						]
+					}
+				],
+				"icon": "Radio",
+				"typicalWork": [
+					"Fiber optic network design",
+					"Data center site selection and design",
+					"Tower and antenna installations",
+					"5G network planning",
+					"Rural connectivity solutions"
+				],
+				"order": 7,
+				"createdAt": "2026-01-27T07:52:02.105Z",
+				"updatedAt": "2026-01-27T07:52:02.105Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"15": {
+				"id": 15,
+				"documentId": "qvehd0g5l1sh9nxvm0he2e6y",
+				"name": "Government & Public Sector!!!",
+				"slug": "government-and-public-sector",
+				"shortDescription": "Supporting public sector clients in delivering essential community infrastructure.",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "We partner with governments and public sector organizations to plan, develop, and deliver infrastructure that serves communities. Our experience spans national infrastructure programs, urban development initiatives, and essential public services."
+							}
+						]
+					}
+				],
+				"icon": "Landmark",
+				"typicalWork": [
+					"Public building programs",
+					"Defense and security facilities",
+					"Justice and correctional infrastructure",
+					"Community and cultural facilities",
+					"Emergency services"
+				],
+				"order": 8,
+				"createdAt": "2026-01-27T07:52:34.707Z",
+				"updatedAt": "2026-01-30T10:58:34.945Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"projects": [],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::projects-page.projects-page": {
+			"1": {
+				"id": 1,
+				"documentId": "yc78jt6okpcq9khftwlzb7dj",
+				"title": "Our Projects",
+				"description": "Explore our portfolio of transformative engineering projects spanning six continents. From renewable energy installations to urban development, we deliver excellence across diverse sectors and challenging environments.",
+				"createdAt": "2026-01-27T10:11:15.385Z",
+				"updatedAt": "2026-01-27T15:33:16.345Z",
+				"publishedAt": null,
+				"locale": null,
+				"hero": 1,
+				"cta": 1,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"projects.hero": {},
+		"api::office.office": {
+			"1": {
+				"id": 1,
+				"documentId": "hpmcgjqj42exxxbsn436k913",
+				"city": "London",
+				"country": "United Kingdom",
+				"address": "125 Old Broad Street, London EC2N 1AR",
+				"phone": "+44 20 7123 4567",
+				"email": "london@projectglobally.com",
+				"isHeadquarters": true,
+				"latitude": 51.5156,
+				"longitude": -0.0843,
+				"order": 1,
+				"createdAt": "2026-01-27T08:10:22.394Z",
+				"updatedAt": "2026-01-27T08:10:22.394Z",
+				"publishedAt": null,
+				"locale": null,
+				"image": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"3": {
+				"id": 3,
+				"documentId": "wcgo66065bj357ncwnc8wimn",
+				"city": "Ulaanbaatar",
+				"country": "Mongolia",
+				"address": "Central Tower, Sukhbaatar Square 2, Ulaanbaatar 14200",
+				"phone": "+976 11 312 345",
+				"email": "mongolia@projectglobally.com",
+				"isHeadquarters": false,
+				"latitude": 47.9184,
+				"longitude": 106.9177,
+				"order": 2,
+				"createdAt": "2026-01-27T08:10:54.787Z",
+				"updatedAt": "2026-01-30T07:52:42.282Z",
+				"publishedAt": null,
+				"locale": null,
+				"image": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"5": {
+				"id": 5,
+				"documentId": "r6kreiaq4t9cc9mspxaob62m",
+				"city": "Dubai",
+				"country": "United Arab Emirates",
+				"address": "Level 14, Boulevard Plaza Tower 1, Downtown Dubai",
+				"phone": "+971 4 567 8901",
+				"email": "dubai@projectglobally.com",
+				"isHeadquarters": false,
+				"latitude": 25.1972,
+				"longitude": 55.2744,
+				"order": 3,
+				"createdAt": "2026-01-27T08:11:32.866Z",
+				"updatedAt": "2026-01-30T07:49:07.562Z",
+				"publishedAt": null,
+				"locale": null,
+				"image": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"11": {
+				"id": 11,
+				"documentId": "zj48m5igei41efipxf1kxppc",
+				"city": "Sydney",
+				"country": "Australia",
+				"address": "Level 25, 52 Martin Place, Sydney NSW 2000",
+				"phone": "+61 2 9876 5432",
+				"email": "sydney@projectglobally.com",
+				"isHeadquarters": false,
+				"latitude": null,
+				"longitude": null,
+				"order": 0,
+				"createdAt": "2026-01-30T07:48:59.609Z",
+				"updatedAt": "2026-01-30T07:53:10.489Z",
+				"publishedAt": null,
+				"locale": null,
+				"image": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::job-position.job-position": {
+			"1": {
+				"id": 1,
+				"documentId": "nk4c6bcr4qxx96sef1jhcoc4",
+				"title": "Senior Structural Engineer",
+				"slug": "senior-structural-engineer",
+				"department": "Engineering",
+				"location": "London, UK",
+				"type": "Full-time",
+				"summary": "Lead complex structural design projects for major infrastructure developments across Europe.",
+				"responsibilities": [
+					"Lead structural analysis and design for large-scale infrastructure projects",
+					"Mentor junior engineers and review their technical work",
+					"Coordinate with multidisciplinary teams and external stakeholders",
+					"Ensure compliance with relevant codes and standards",
+					"Contribute to business development and client relationships"
+				],
+				"requirements": [
+					"Chartered Engineer (CEng) or equivalent",
+					"10+ years of structural engineering experience",
+					"Proficiency in structural analysis software (SAP2000, ETABS, STAAD)",
+					"Strong communication and leadership skills",
+					"Experience with BIM workflows"
+				],
+				"benefits": null,
+				"salary": null,
+				"closingDate": null,
+				"createdAt": "2026-01-27T08:03:53.438Z",
+				"updatedAt": "2026-01-27T08:03:53.438Z",
+				"publishedAt": null,
+				"locale": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"3": {
+				"id": 3,
+				"documentId": "boy6660f5uitelrbgyutww1i",
+				"title": "Environmental Consultant",
+				"slug": "environmental-consultant",
+				"department": "Environment",
+				"location": "Sydney, Australia",
+				"type": "Full-time",
+				"summary": "Deliver environmental impact assessments and sustainability strategies for diverse projects.",
+				"responsibilities": [
+					"Conduct environmental impact assessments and due diligence",
+					"Develop sustainability strategies and action plans",
+					"Prepare environmental permits and regulatory submissions",
+					"Engage with stakeholders and regulatory authorities",
+					"Monitor environmental compliance during construction"
+				],
+				"requirements": [
+					"Degree in Environmental Science, Engineering, or related field",
+					"5+ years of environmental consulting experience",
+					"Knowledge of Australian environmental legislation",
+					"Strong report writing and presentation skills",
+					"Experience with GIS and environmental modeling tools"
+				],
+				"benefits": null,
+				"salary": null,
+				"closingDate": null,
+				"createdAt": "2026-01-27T08:04:41.997Z",
+				"updatedAt": "2026-01-27T08:04:41.997Z",
+				"publishedAt": null,
+				"locale": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"5": {
+				"id": 5,
+				"documentId": "tkneohas4prwt83y5jgvopqa",
+				"title": "Digital Solutions Architect",
+				"slug": "digital-solutions-architect",
+				"department": "Digital",
+				"location": "Remote",
+				"type": "Full-time",
+				"summary": "Design and implement digital transformation solutions for engineering workflows and client deliverables.",
+				"responsibilities": [
+					"Architect scalable digital solutions for engineering applications",
+					"Lead development of digital twins and IoT integrations",
+					"Collaborate with engineering teams to digitize workflows",
+					"Evaluate and implement emerging technologies",
+					"Develop technical roadmaps and standards"
+				],
+				"requirements": [
+					"Degree in Computer Science, Software Engineering, or related field",
+					"7+ years of software architecture experience",
+					"Experience with cloud platforms (AWS, Azure, GCP)",
+					"Knowledge of AEC industry workflows and tools",
+					"Strong programming skills in Python, JavaScript, or similar"
+				],
+				"benefits": null,
+				"salary": null,
+				"closingDate": null,
+				"createdAt": "2026-01-27T08:07:48.841Z",
+				"updatedAt": "2026-01-27T08:07:48.841Z",
+				"publishedAt": null,
+				"locale": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"7": {
+				"id": 7,
+				"documentId": "rvbmh16t5uaz44r4t7t9xnti",
+				"title": "Graduate Civil Engineer",
+				"slug": "graduate-civil-engineer",
+				"department": "Engineering",
+				"location": "Dubai, UAE",
+				"type": "Full-time",
+				"summary": "Join our graduate program and gain hands-on experience across diverse civil engineering projects.",
+				"responsibilities": [
+					"Assist in design and analysis of civil engineering projects",
+					"Conduct site visits and inspections",
+					"Prepare technical reports and drawings",
+					"Participate in graduate development program",
+					"Support senior engineers in client meetings"
+				],
+				"requirements": [
+					"Recent graduate with degree in Civil Engineering",
+					"Strong academic record (2:1 or equivalent)",
+					"Basic knowledge of AutoCAD and Civil 3D",
+					"Excellent communication skills",
+					"Willingness to travel and work on site"
+				],
+				"benefits": null,
+				"salary": null,
+				"closingDate": null,
+				"createdAt": "2026-01-27T08:08:36.575Z",
+				"updatedAt": "2026-01-27T08:08:36.575Z",
+				"publishedAt": null,
+				"locale": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"9": {
+				"id": 9,
+				"documentId": "oowbvbfnbr1y4g1ndhqji1d2",
+				"title": "Project Manager - Mining",
+				"slug": "roject-manager-mining",
+				"department": "Management",
+				"location": "Ulaanbaatar, Mongolia",
+				"type": "Full-time",
+				"summary": "Manage delivery of major mining infrastructure projects ensuring quality, budget, and schedule targets are met.",
+				"responsibilities": [
+					"Lead project planning, execution, and delivery",
+					"Manage project budgets, schedules, and resources",
+					"Coordinate multidisciplinary teams and contractors",
+					"Maintain client relationships and stakeholder communication",
+					"Identify and mitigate project risks"
+				],
+				"requirements": [
+					"PMP or equivalent project management certification",
+					"10+ years of project management experience in mining/resources",
+					"Strong commercial and contractual awareness",
+					"Proven track record of delivering complex projects",
+					"Excellent leadership and negotiation skills"
+				],
+				"benefits": null,
+				"salary": null,
+				"closingDate": null,
+				"createdAt": "2026-01-27T08:09:10.487Z",
+				"updatedAt": "2026-01-30T10:29:40.599Z",
+				"publishedAt": null,
+				"locale": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"11": {
+				"id": 11,
+				"documentId": "r43vj9gyqh563a02s8njn0xy",
+				"title": "Transportation Planner",
+				"slug": "transportation-planner",
+				"department": "Planning",
+				"location": "oronto, Canada",
+				"type": "Full-time",
+				"summary": "Develop innovative transportation solutions and mobility strategies for urban environments.",
+				"responsibilities": [
+					"Develop transportation master plans and strategies",
+					"Conduct traffic modeling and demand forecasting",
+					"Prepare transportation impact assessments",
+					"Engage with communities and public stakeholders",
+					"Support transit and active transportation planning"
+				],
+				"requirements": [
+					"Degree in Urban Planning, Transportation Engineering, or related field",
+					"5+ years of transportation planning experience",
+					"Proficiency in traffic modeling software (VISSIM, Synchro)",
+					"Knowledge of Canadian transportation regulations",
+					"Strong analytical and communication skills"
+				],
+				"benefits": null,
+				"salary": null,
+				"closingDate": null,
+				"createdAt": "2026-01-27T08:09:42.345Z",
+				"updatedAt": "2026-01-27T08:09:42.345Z",
+				"publishedAt": null,
+				"locale": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::insight.insight": {
+			"1": {
+				"id": 1,
+				"documentId": "pvfndat8n3zixm6zy975y09u",
+				"title": "The future of infrastructure is digital",
+				"slug": "the-future-of-infrastructure-is-digital",
+				"excerpt": "How digital twins and data analytics are revolutionizing the way we design, build, and operate assets.",
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Digital transformation is reshaping the infrastructure sector. From design through construction to operation, digital technologies are enabling unprecedented levels of efficiency, safety, and sustainability.\\n\\nDigital twins - virtual replicas of physical assets - are at the forefront of this transformation. By combining real-time sensor data with advanced analytics and AI, digital twins enable predictive maintenance, optimized operations, and informed decision-making throughout an asset's lifecycle.\\n\\nThe benefits extend across the project lifecycle: improved design accuracy, reduced construction waste, enhanced operational efficiency, and extended asset life. Early adopters are seeing 20-30% reductions in operational costs and significant improvements in safety performance."
+							}
+						]
+					}
+				],
+				"category": null,
+				"badge": "Report",
+				"badgeVariant": "primary",
+				"author": null,
+				"readTime": 8,
+				"featured": true,
+				"publishDate": null,
+				"tags": null,
+				"createdAt": "2026-01-27T07:46:47.721Z",
+				"updatedAt": "2026-01-30T06:02:00.901Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": 9,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"3": {
+				"id": 3,
+				"documentId": "ij0rrljrtrzu8f1r3t54noxq",
+				"title": "Nature-based solutions for climate resilience",
+				"slug": "nature-based-solutions-for-climate-resilience",
+				"excerpt": "Integrating natural systems into urban planning to mitigate flood risks and enhance biodiversity.",
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "As cities face increasing climate-related challenges, nature-based solutions offer a compelling approach to building resilience while delivering multiple co-benefits.\\n\\nFrom green infrastructure and constructed wetlands to urban forests and permeable surfaces, these solutions work with natural processes to manage stormwater, reduce urban heat islands, improve air quality, and enhance biodiversity.\\n\\nOur experience across global projects demonstrates that nature-based solutions can be cost-effective alternatives or complements to traditional grey infrastructure, often delivering better long-term value when considering full lifecycle costs and co-benefits."
+							}
+						]
+					}
+				],
+				"category": "Sustainability",
+				"badge": "Case Study",
+				"badgeVariant": "secondary",
+				"author": "James Morrison",
+				"readTime": 6,
+				"featured": true,
+				"publishDate": null,
+				"tags": null,
+				"createdAt": "2026-01-27T08:13:26.470Z",
+				"updatedAt": "2026-01-30T06:00:25.774Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": 10,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"5": {
+				"id": 5,
+				"documentId": "ujukelk8u2l1lg86gnen04hf",
+				"title": "Accelerating the energy transition",
+				"slug": "accelerating-the-energy-transition",
+				"excerpt": "New partnerships announced to drive hydrogen adoption across heavy industry sectors in Europe.",
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "The transition to clean energy is accelerating, driven by policy commitments, technological advances, and economic opportunities. Hydrogen is emerging as a critical enabler for decarbonizing hard-to-abate sectors.\\n\\nWe are proud to announce new strategic partnerships with leading European industrial players to develop hydrogen infrastructure and integration solutions. These collaborations will support the production, distribution, and utilization of green hydrogen across steel, chemicals, and heavy transport sectors.\\n\\nThe projects represent investments of over EUR 2 billion and will create thousands of jobs while contributing to Europe's climate neutrality goals."
+							}
+						]
+					}
+				],
+				"category": "Energy",
+				"badge": "News",
+				"badgeVariant": "primary",
+				"author": "Maria Santos",
+				"readTime": 4,
+				"featured": true,
+				"publishDate": null,
+				"tags": null,
+				"createdAt": "2026-01-27T08:14:13.961Z",
+				"updatedAt": "2026-01-30T06:01:13.677Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": 12,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"7": {
+				"id": 7,
+				"documentId": "hnr4xehfvv8d66gjjv08a8hr",
+				"title": "Building resilient water systems for a changing climate",
+				"slug": "building-resilient-water-systems-for-a-changing-climate",
+				"excerpt": "Strategies for water utilities to adapt infrastructure and operations to climate variability.",
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "Climate change is fundamentally altering the water cycle, creating new challenges for water utilities worldwide. From more intense droughts to increased flooding, water systems must adapt to greater variability and uncertainty.\\n\\nSuccessful adaptation requires integrated approaches combining infrastructure upgrades, operational improvements, and demand management. Our water resilience framework helps utilities assess vulnerabilities, prioritize investments, and develop adaptive management strategies.\\n\\nKey strategies include diversifying water sources, implementing smart water networks, enhancing storage capacity, and improving system flexibility to respond to changing conditions."
+							}
+						]
+					}
+				],
+				"category": "Water",
+				"badge": "Whitepaper",
+				"badgeVariant": "secondary",
+				"author": "Dr. Fatima Al-Hassan",
+				"readTime": 10,
+				"featured": false,
+				"publishDate": null,
+				"tags": null,
+				"createdAt": "2026-01-27T08:15:04.302Z",
+				"updatedAt": "2026-01-27T08:15:04.302Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"9": {
+				"id": 9,
+				"documentId": "u0xyjmzewdboiu3yiu25pru6",
+				"title": "The role of geophysics in sustainable mining",
+				"slug": "the-role-of-geophysics-in-sustainable-mining",
+				"excerpt": "How advanced geophysical techniques are enabling more efficient and environmentally responsible mineral exploration.",
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"text": "As demand for critical minerals grows to support the energy transition, the mining industry faces pressure to find and develop resources more sustainably. Advanced geophysics is playing a crucial role in meeting this challenge.\\n\\nModern geophysical techniques enable more targeted exploration, reducing the environmental footprint of discovery programs. By providing detailed subsurface information, geophysics helps optimize drill programs, minimize land disturbance, and improve resource estimation accuracy.\\n\\nFrom airborne electromagnetics to 3D seismic imaging, our geophysics team is at the forefront of applying these technologies to support responsible resource development."
+							}
+						]
+					}
+				],
+				"category": "Mining",
+				"badge": "Opinion",
+				"badgeVariant": "primary",
+				"author": "Michael Torres",
+				"readTime": 7,
+				"featured": true,
+				"publishDate": null,
+				"tags": null,
+				"createdAt": "2026-01-27T08:15:55.347Z",
+				"updatedAt": "2026-01-27T08:15:55.347Z",
+				"publishedAt": null,
+				"locale": null,
+				"featuredImage": null,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::home-page.home-page": {
+			"1": {
+				"id": 1,
+				"documentId": "ix7yyuwdgewo083ubbfovthb",
+				"createdAt": "2026-01-30T05:21:57.269Z",
+				"updatedAt": "2026-01-30T12:48:29.156Z",
+				"publishedAt": null,
+				"locale": null,
+				"hero": 1,
+				"features": [
+					1,
+					2,
+					3
+				],
+				"excellenceSection": 3,
+				"ctaSection": 1,
+				"insightSection": 1,
+				"sectorSection": 1,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"home.sector-section": {},
+		"home.insights-section": {},
+		"home.cta-section": {},
+		"home.excellence-section": {},
+		"home.feature-item": {},
+		"home.hero": {},
+		"shared.section-header": {},
+		"api::global.global": {},
+		"footer.footer": {},
+		"shared.social-link": {},
+		"footer.link-column": {},
+		"shared.link-item": {},
+		"api::department.department": {},
+		"api::contact-page.contact-page": {
+			"1": {
+				"id": 1,
+				"documentId": "xedo185p28t77x4pyb1btict",
+				"title": "contact-page",
+				"createdAt": "2026-01-28T15:49:42.107Z",
+				"updatedAt": "2026-01-28T15:49:42.107Z",
+				"publishedAt": null,
+				"locale": null,
+				"hero": 6,
+				"offices": [
+					1,
+					3,
+					5
+				],
+				"form": 1,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"contact.form-config": {},
+		"api::careers-page.careers-page": {
+			"1": {
+				"id": 1,
+				"documentId": "oinmy5717gd8r23gtfwqvocs",
+				"createdAt": "2026-01-28T05:26:18.790Z",
+				"updatedAt": "2026-01-30T10:20:46.741Z",
+				"publishedAt": null,
+				"locale": null,
+				"hero": 1,
+				"whyWorkWithUs": 1,
+				"positionSection": 1,
+				"applicationSection": 1,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"careers.application-section": {},
+		"careers.benefits-section": {},
+		"careers.hero": {},
+		"shared.value-item": {},
+		"api::about-page.about-page": {
+			"1": {
+				"id": 1,
+				"documentId": "sltavv8ox05nt2kq42l7ve4a",
+				"title": "About Us",
+				"description": "Shaping a better future through connected thinking",
+				"createdAt": "2026-01-27T09:11:53.824Z",
+				"updatedAt": "2026-01-29T07:19:54.412Z",
+				"publishedAt": null,
+				"locale": null,
+				"hero": 1,
+				"purpose": 1,
+				"values": 1,
+				"impact": 1,
+				"cta": 1,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"about.cta-section": {},
+		"about.impact-section": {},
+		"about.values-section": {},
+		"about.purpose-section": {},
+		"shared.stat-item": {}
+	}
+}

@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact-inquiries",
+  "info": {
+    "singularName": "contact-inquiry",
+    "pluralName": "contact-inquiries",
+    "displayName": "Contact Inquiry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "inquiryType": {
+      "type": "string",
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "inquiryStatus": {
+      "type": "enumeration",
+      "default": "new",
+      "enum": [
+        "new",
+        "in-progress",
+        "responded",
+        "closed"
+      ]
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

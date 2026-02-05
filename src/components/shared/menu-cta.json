@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_shared_menu_ctas",
+  "info": {
+    "displayName": "Menu CTA",
+    "description": "Call-to-action card for mega menu"
+  },
+  "options": {},
+  "attributes": {
+    "menuType": {
+      "type": "enumeration",
+      "enum": ["projects", "sectors", "services", "about", "careers"],
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "kicker": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "buttonHref": {
+      "type": "string"
+    },
+    "secondaryLabel": {
+      "type": "string"
+    },
+    "secondaryHref": {
+      "type": "string"
+    }
+  }
+}

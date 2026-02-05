@@ -501,6 +501,46 @@ export interface ApiAboutPageAboutPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiCareerApplicationCareerApplication
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'career_applications';
+  info: {
+    displayName: 'Career Application';
+    pluralName: 'career-applications';
+    singularName: 'career-application';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    applicationStatus: Schema.Attribute.Enumeration<
+      ['new', 'reviewing', 'shortlisted', 'interviewed', 'offered', 'rejected']
+    > &
+      Schema.Attribute.DefaultTo<'new'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    experienceLevel: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::career-application.career-application'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.String;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    notes: Schema.Attribute.Text;
+    phone: Schema.Attribute.String;
+    position: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    resume: Schema.Attribute.Media<'files'> & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCareersPageCareersPage extends Struct.SingleTypeSchema {
   collectionName: 'careers_pages';
   info: {
@@ -535,6 +575,51 @@ export interface ApiCareersPageCareersPage extends Struct.SingleTypeSchema {
       'careers.benefits-section',
       false
     >;
+  };
+}
+
+export interface ApiContactInquiryContactInquiry
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'contact-inquiries';
+  info: {
+    displayName: 'Contact Inquiry';
+    pluralName: 'contact-inquiries';
+    singularName: 'contact-inquiry';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: false;
+    };
+  };
+  attributes: {
+    company: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    firstName: Schema.Attribute.String & Schema.Attribute.Required;
+    inquiryStatus: Schema.Attribute.Enumeration<
+      ['new', 'in-progress', 'responded', 'closed']
+    > &
+      Schema.Attribute.DefaultTo<'new'>;
+    inquiryType: Schema.Attribute.String & Schema.Attribute.Required;
+    lastName: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-inquiry.contact-inquiry'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.Text & Schema.Attribute.Required;
+    notes: Schema.Attribute.Text;
+    phone: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
   };
 }
 
@@ -800,6 +885,55 @@ export interface ApiOfficeOffice extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiProjectSubmissionProjectSubmission
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'project_submissions';
+  info: {
+    displayName: 'Project Submission';
+    pluralName: 'project-submissions';
+    singularName: 'project-submission';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    budget: Schema.Attribute.String;
+    city: Schema.Attribute.String;
+    country: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    documents: Schema.Attribute.Media<'files', true>;
+    email: Schema.Attribute.Email;
+    fullName: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::project-submission.project-submission'
+    > &
+      Schema.Attribute.Private;
+    phone: Schema.Attribute.String;
+    projectStage: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    refId: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    reviewStatus: Schema.Attribute.Enumeration<
+      ['new', 'reviewing', 'contacted', 'approved', 'rejected']
+    > &
+      Schema.Attribute.DefaultTo<'new'>;
+    sector: Schema.Attribute.String;
+    services: Schema.Attribute.JSON;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    wantConsultancy: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    wantInvestors: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
 export interface ApiProjectProject extends Struct.CollectionTypeSchema {
   collectionName: 'projects';
   info: {
@@ -834,7 +968,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       ['americas', 'europe', 'asia-pacific', 'middle-east', 'africa']
     > &
       Schema.Attribute.Required;
-    sector: Schema.Attribute.Relation<'oneToOne', 'api::sector.sector'>;
+    sector: Schema.Attribute.Relation<'manyToOne', 'api::sector.sector'>;
     services: Schema.Attribute.Relation<'oneToMany', 'api::service.service'>;
     shortSummary: Schema.Attribute.Text & Schema.Attribute.Required;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
@@ -881,6 +1015,7 @@ export interface ApiProjectsPageProjectsPage extends Struct.SingleTypeSchema {
 export interface ApiSectorSector extends Struct.CollectionTypeSchema {
   collectionName: 'sectors';
   info: {
+    description: 'Business sectors and industries served';
     displayName: 'Sector';
     pluralName: 'sectors';
     singularName: 'sector';
@@ -889,25 +1024,30 @@ export interface ApiSectorSector extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    bullets: Schema.Attribute.JSON;
+    children: Schema.Attribute.Relation<'oneToMany', 'api::sector.sector'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Blocks;
+    deliverables: Schema.Attribute.JSON;
     featuredImage: Schema.Attribute.Media<'images'>;
-    icon: Schema.Attribute.String;
+    icon: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::sector.sector'
     > &
       Schema.Attribute.Private;
+    menuOrder: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     name: Schema.Attribute.String & Schema.Attribute.Required;
-    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    overview: Schema.Attribute.RichText;
+    parent: Schema.Attribute.Relation<'manyToOne', 'api::sector.sector'>;
     projects: Schema.Attribute.Relation<'oneToMany', 'api::project.project'>;
     publishedAt: Schema.Attribute.DateTime;
-    shortDescription: Schema.Attribute.Text & Schema.Attribute.Required;
+    shortDesc: Schema.Attribute.Text;
+    showInMenu: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
-    typicalWork: Schema.Attribute.JSON;
+    typicalProjects: Schema.Attribute.JSON;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -925,10 +1065,10 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    children: Schema.Attribute.Relation<'oneToMany', 'api::service.service'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Blocks;
     featuredImage: Schema.Attribute.Media<'images'>;
     icon: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -937,16 +1077,15 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
       'api::service.service'
     > &
       Schema.Attribute.Private;
+    menuOrder: Schema.Attribute.Integer;
     name: Schema.Attribute.String & Schema.Attribute.Required;
-    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    overview: Schema.Attribute.Blocks;
+    parent: Schema.Attribute.Relation<'manyToOne', 'api::service.service'>;
     projects: Schema.Attribute.Relation<'oneToMany', 'api::project.project'>;
     publishedAt: Schema.Attribute.DateTime;
-    shortDescription: Schema.Attribute.Text & Schema.Attribute.Required;
+    shortDesc: Schema.Attribute.Text;
+    showInMenu: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
-    subservices: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::subservice.subservice'
-    >;
     typicalWork: Schema.Attribute.JSON;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -954,36 +1093,38 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiSubserviceSubservice extends Struct.CollectionTypeSchema {
-  collectionName: 'subservices';
+export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
+  collectionName: 'site_settings';
   info: {
-    displayName: 'Subservice';
-    pluralName: 'subservices';
-    singularName: 'subservice';
+    displayName: 'site-setting';
+    pluralName: 'site-settings';
+    singularName: 'site-setting';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    bullets: Schema.Attribute.JSON;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    icon: Schema.Attribute.String;
+    enableDynamicNavigation: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
+    favicon: Schema.Attribute.Media<'images'>;
+    googleAnalyticsId: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
-      'api::subservice.subservice'
+      'api::site-setting.site-setting'
     > &
       Schema.Attribute.Private;
-    name: Schema.Attribute.String;
-    parentService: Schema.Attribute.Relation<
-      'manyToOne',
-      'api::service.service'
-    >;
+    logo: Schema.Attribute.Media<'images'>;
+    navigationCTAs: Schema.Attribute.Component<'shared.menu-cta', true>;
+    primaryColor: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    shortDescription: Schema.Attribute.Text;
-    slug: Schema.Attribute.UID<'name'>;
+    secondaryColor: Schema.Attribute.String;
+    siteDescription: Schema.Attribute.Text;
+    siteName: Schema.Attribute.String & Schema.Attribute.Required;
+    socialLinks: Schema.Attribute.Component<'shared.social-link', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1595,7 +1736,9 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about-page.about-page': ApiAboutPageAboutPage;
+      'api::career-application.career-application': ApiCareerApplicationCareerApplication;
       'api::careers-page.careers-page': ApiCareersPageCareersPage;
+      'api::contact-inquiry.contact-inquiry': ApiContactInquiryContactInquiry;
       'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::department.department': ApiDepartmentDepartment;
       'api::global.global': ApiGlobalGlobal;
@@ -1603,11 +1746,12 @@ declare module '@strapi/strapi' {
       'api::insight.insight': ApiInsightInsight;
       'api::job-position.job-position': ApiJobPositionJobPosition;
       'api::office.office': ApiOfficeOffice;
+      'api::project-submission.project-submission': ApiProjectSubmissionProjectSubmission;
       'api::project.project': ApiProjectProject;
       'api::projects-page.projects-page': ApiProjectsPageProjectsPage;
       'api::sector.sector': ApiSectorSector;
       'api::service.service': ApiServiceService;
-      'api::subservice.subservice': ApiSubserviceSubservice;
+      'api::site-setting.site-setting': ApiSiteSettingSiteSetting;
       'api::team-member.team-member': ApiTeamMemberTeamMember;
       'api::team-page.team-page': ApiTeamPageTeamPage;
       'plugin::content-releases.release': PluginContentReleasesRelease;

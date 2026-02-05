@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sector",
     "pluralName": "sectors",
-    "displayName": "Sector"
+    "displayName": "Sector",
+    "description": "Business sectors and industries served"
   },
   "options": {
     "draftAndPublish": true
@@ -20,35 +21,58 @@
       "targetField": "name",
       "required": true
     },
-    "shortDescription": {
+    "shortDesc": {
       "type": "text",
-      "required": true
-    },
-    "description": {
-      "type": "blocks"
+      "required": false
     },
     "icon": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "typicalWork": {
+    "overview": {
+      "type": "richtext"
+    },
+    "bullets": {
       "type": "json"
     },
-    "order": {
-      "type": "integer",
-      "default": 0
+    "deliverables": {
+      "type": "json"
+    },
+    "typicalProjects": {
+      "type": "json"
     },
     "featuredImage": {
       "type": "media",
       "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images"
       ]
     },
+    "parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sector.sector",
+      "inversedBy": "children"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sector.sector",
+      "mappedBy": "parent"
+    },
     "projects": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::project.project"
+      "target": "api::project.project",
+      "mappedBy": "sector"
+    },
+    "showInMenu": {
+      "type": "boolean",
+      "default": true
+    },
+    "menuOrder": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

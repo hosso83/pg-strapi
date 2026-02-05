@@ -351,6 +351,28 @@ export interface SharedLinkItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedMenuCta extends Struct.ComponentSchema {
+  collectionName: 'components_shared_menu_ctas';
+  info: {
+    description: 'Call-to-action card for mega menu';
+    displayName: 'Menu CTA';
+  };
+  attributes: {
+    body: Schema.Attribute.Text;
+    buttonHref: Schema.Attribute.String;
+    buttonLabel: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    kicker: Schema.Attribute.String;
+    menuType: Schema.Attribute.Enumeration<
+      ['projects', 'sectors', 'services', 'about', 'careers']
+    > &
+      Schema.Attribute.Required;
+    secondaryHref: Schema.Attribute.String;
+    secondaryLabel: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedSectionHeader extends Struct.ComponentSchema {
   collectionName: 'components_shared_section_headers';
   info: {
@@ -362,10 +384,6 @@ export interface SharedSectionHeader extends Struct.ComponentSchema {
     action: Schema.Attribute.Component<'shared.cta-button', false>;
     description: Schema.Attribute.Text;
     eyebrow: Schema.Attribute.String;
-    jobs: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::job-position.job-position'
-    >;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -457,6 +475,7 @@ declare module '@strapi/strapi' {
       'shared.cta-button': SharedCtaButton;
       'shared.cta-section': SharedCtaSection;
       'shared.link-item': SharedLinkItem;
+      'shared.menu-cta': SharedMenuCta;
       'shared.section-header': SharedSectionHeader;
       'shared.seo': SharedSeo;
       'shared.social-link': SharedSocialLink;

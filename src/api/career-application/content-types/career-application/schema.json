@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_applications",
+  "info": {
+    "singularName": "career-application",
+    "pluralName": "career-applications",
+    "displayName": "Career Application"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "experienceLevel": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "resume": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "applicationStatus": {
+      "type": "enumeration",
+      "default": "new",
+      "enum": [
+        "new",
+        "reviewing",
+        "shortlisted",
+        "interviewed",
+        "offered",
+        "rejected"
+      ]
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

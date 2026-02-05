@@ -20,11 +20,11 @@
       "targetField": "name",
       "required": true
     },
-    "shortDescription": {
+    "shortDesc": {
       "type": "text",
-      "required": true
+      "required": false
     },
-    "description": {
+    "overview": {
       "type": "blocks"
     },
     "icon": {
@@ -32,10 +32,6 @@
     },
     "typicalWork": {
       "type": "json"
-    },
-    "order": {
-      "type": "integer",
-      "default": 0
     },
     "featuredImage": {
       "type": "media",
@@ -50,11 +46,24 @@
       "relation": "oneToMany",
       "target": "api::project.project"
     },
-    "subservices": {
+    "showInMenu": {
+      "type": "boolean",
+      "default": true
+    },
+    "menuOrder": {
+      "type": "integer"
+    },
+    "children": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::subservice.subservice",
-      "mappedBy": "parentService"
+      "target": "api::service.service",
+      "mappedBy": "parent"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::service.service",
+      "inversedBy": "children"
     }
   }
 }
