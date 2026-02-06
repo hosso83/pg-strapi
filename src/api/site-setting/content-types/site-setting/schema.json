@@ -21,16 +21,12 @@
     "logo": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "favicon": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "primaryColor": {
       "type": "string"
@@ -54,6 +50,16 @@
     "enableDynamicNavigation": {
       "type": "boolean",
       "default": true
+    },
+    "navigation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::navigation.navigation"
+    },
+    "footerNavigation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::navigation.navigation"
     }
   }
 }

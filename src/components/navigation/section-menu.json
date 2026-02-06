@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_navigation_section_menus",
+  "info": {
+    "displayName": "Section Menu"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "menuItem": {
+      "type": "component",
+      "component": "navigation.parent-menu",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

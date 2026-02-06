@@ -284,6 +284,96 @@ export interface HomeSectorSection extends Struct.ComponentSchema {
   };
 }
 
+export interface NavigationLink extends Struct.ComponentSchema {
+  collectionName: 'components_navigation_links';
+  info: {
+    displayName: 'Link';
+    icon: 'link';
+  };
+  attributes: {
+    href: Schema.Attribute.String & Schema.Attribute.Required;
+    icon: Schema.Attribute.String;
+    isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    nofollow: Schema.Attribute.Boolean;
+    target: Schema.Attribute.Enumeration<['_self', '_blank']> &
+      Schema.Attribute.DefaultTo<'_self'>;
+    variant: Schema.Attribute.Enumeration<
+      ['link', 'button', 'outline', 'ghost']
+    > &
+      Schema.Attribute.DefaultTo<'link'>;
+  };
+}
+
+export interface NavigationMegaMenu extends Struct.ComponentSchema {
+  collectionName: 'components_navigation_mega_menus';
+  info: {
+    displayName: 'Mega Menu';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    megaMenuColumn: Schema.Attribute.Component<
+      'navigation.mega-menu-column',
+      true
+    >;
+  };
+}
+
+export interface NavigationMegaMenuColumn extends Struct.ComponentSchema {
+  collectionName: 'components_navigation_mega_menu_columns';
+  info: {
+    displayName: 'Mega Menu Column';
+  };
+  attributes: {
+    Label: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Column'>;
+    menuCta: Schema.Attribute.Component<'shared.cta-section', false>;
+    sectionMenu: Schema.Attribute.Component<'navigation.section-menu', true>;
+  };
+}
+
+export interface NavigationMenu extends Struct.ComponentSchema {
+  collectionName: 'components_navigation_menus';
+  info: {
+    description: 'Main navigation menu configuration with dynamic sections';
+    displayName: 'Navigation Menu';
+    icon: 'menu';
+  };
+  attributes: {
+    enableMegaMenu: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    enableSectionMenu: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    megaMenus: Schema.Attribute.Component<'navigation.mega-menu', true>;
+    quickLinks: Schema.Attribute.Component<'navigation.link', true>;
+    sections: Schema.Attribute.Component<'navigation.section-menu', true>;
+  };
+}
+
+export interface NavigationParentMenu extends Struct.ComponentSchema {
+  collectionName: 'components_navigation_parent_menus';
+  info: {
+    displayName: 'Parent Menu';
+  };
+  attributes: {
+    childrenMenu: Schema.Attribute.Component<'navigation.link', true>;
+    label: Schema.Attribute.String;
+    overviewLink: Schema.Attribute.Component<'navigation.link', false>;
+  };
+}
+
+export interface NavigationSectionMenu extends Struct.ComponentSchema {
+  collectionName: 'components_navigation_section_menus';
+  info: {
+    displayName: 'Section Menu';
+  };
+  attributes: {
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    menuItem: Schema.Attribute.Component<'navigation.parent-menu', true>;
+  };
+}
+
 export interface ProjectsHero extends Struct.ComponentSchema {
   collectionName: 'components_projects_heroes';
   info: {
@@ -471,6 +561,12 @@ declare module '@strapi/strapi' {
       'home.hero': HomeHero;
       'home.insights-section': HomeInsightsSection;
       'home.sector-section': HomeSectorSection;
+      'navigation.link': NavigationLink;
+      'navigation.mega-menu': NavigationMegaMenu;
+      'navigation.mega-menu-column': NavigationMegaMenuColumn;
+      'navigation.menu': NavigationMenu;
+      'navigation.parent-menu': NavigationParentMenu;
+      'navigation.section-menu': NavigationSectionMenu;
       'projects.hero': ProjectsHero;
       'shared.cta-button': SharedCtaButton;
       'shared.cta-section': SharedCtaSection;

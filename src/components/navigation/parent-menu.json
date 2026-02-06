@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_navigation_parent_menus",
+  "info": {
+    "displayName": "Parent Menu"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "overviewLink": {
+      "type": "component",
+      "component": "navigation.link",
+      "repeatable": false
+    },
+    "childrenMenu": {
+      "type": "component",
+      "component": "navigation.link",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_navigation_menus",
+  "info": {
+    "displayName": "Navigation Menu",
+    "description": "Main navigation menu configuration with dynamic sections",
+    "icon": "menu"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "description": "Menu label/identifier"
+    },
+    "sections": {
+      "type": "component",
+      "component": "navigation.section-menu",
+      "repeatable": true,
+      "description": "Navigation menu sections"
+    },
+    "megaMenus": {
+      "type": "component",
+      "component": "navigation.mega-menu",
+      "repeatable": true,
+      "description": "Mega menu items"
+    },
+    "quickLinks": {
+      "type": "component",
+      "component": "navigation.link",
+      "repeatable": true,
+      "description": "Quick access links"
+    },
+    "enableSectionMenu": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable section-based menu"
+    },
+    "enableMegaMenu": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable mega menu layout"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_navigation_mega_menus",
+  "info": {
+    "displayName": "Mega Menu"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "megaMenuColumn": {
+      "type": "component",
+      "component": "navigation.mega-menu-column",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

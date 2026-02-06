@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_navigation_mega_menu_columns",
+  "info": {
+    "displayName": "Mega Menu Column"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "default": "Column",
+      "required": true
+    },
+    "menuCta": {
+      "type": "component",
+      "component": "shared.cta-section",
+      "repeatable": false
+    },
+    "sectionMenu": {
+      "type": "component",
+      "component": "navigation.section-menu",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

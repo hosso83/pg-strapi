@@ -2,6 +2,8 @@
  * projects-page controller
  */
 
-import { factories } from '@strapi/strapi';
+import { factories } from "@strapi/strapi";
 
-export default factories.createCoreController('api::projects-page.projects-page');
+export default factories.createCoreController(
+  "api::projects-page.projects-page",
+);

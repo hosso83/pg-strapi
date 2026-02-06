@@ -842,6 +842,37 @@ export interface ApiJobPositionJobPosition extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiNavigationNavigation extends Struct.CollectionTypeSchema {
+  collectionName: 'navigations';
+  info: {
+    displayName: 'Navigation';
+    pluralName: 'navigations';
+    singularName: 'navigation';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Label: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::navigation.navigation'
+    > &
+      Schema.Attribute.Private;
+    navItem: Schema.Attribute.DynamicZone<
+      ['navigation.mega-menu', 'navigation.link', 'navigation.section-menu']
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiOfficeOffice extends Struct.CollectionTypeSchema {
   collectionName: 'offices';
   info: {
@@ -1110,6 +1141,10 @@ export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
     enableDynamicNavigation: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<true>;
     favicon: Schema.Attribute.Media<'images'>;
+    footerNavigation: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::navigation.navigation'
+    >;
     googleAnalyticsId: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -1118,6 +1153,10 @@ export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     logo: Schema.Attribute.Media<'images'>;
+    navigation: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::navigation.navigation'
+    >;
     navigationCTAs: Schema.Attribute.Component<'shared.menu-cta', true>;
     primaryColor: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
@@ -1745,6 +1784,7 @@ declare module '@strapi/strapi' {
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::insight.insight': ApiInsightInsight;
       'api::job-position.job-position': ApiJobPositionJobPosition;
+      'api::navigation.navigation': ApiNavigationNavigation;
       'api::office.office': ApiOfficeOffice;
       'api::project-submission.project-submission': ApiProjectSubmissionProjectSubmission;
       'api::project.project': ApiProjectProject;

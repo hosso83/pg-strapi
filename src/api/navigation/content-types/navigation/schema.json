@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigations",
+  "info": {
+    "singularName": "navigation",
+    "pluralName": "navigations",
+    "displayName": "Navigation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true
+    },
+    "navItem": {
+      "type": "dynamiczone",
+      "components": [
+        "navigation.mega-menu",
+        "navigation.link",
+        "navigation.section-menu"
+      ]
+    }
+  }
+}
