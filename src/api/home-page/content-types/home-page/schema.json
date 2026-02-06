@@ -31,11 +31,6 @@
       "component": "home.cta-section",
       "repeatable": false
     },
-    "insightSection": {
-      "type": "component",
-      "component": "home.insights-section",
-      "repeatable": false
-    },
     "sectorSection": {
       "type": "component",
       "component": "home.sector-section",

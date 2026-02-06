@@ -734,7 +734,6 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     >;
     features: Schema.Attribute.Component<'home.feature-item', true>;
     hero: Schema.Attribute.Component<'home.hero', false>;
-    insightSection: Schema.Attribute.Component<'home.insights-section', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
