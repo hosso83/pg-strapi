@@ -389,6 +389,71 @@ export interface ProjectsHero extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionSection extends Struct.ComponentSchema {
+  collectionName: 'components_section';
+  info: {
+    displayName: 'Section';
+  };
+  attributes: {
+    backgroundColor: Schema.Attribute.String;
+    backgroundImage: Schema.Attribute.Media;
+    backgroundType: Schema.Attribute.Enumeration<
+      ['color', 'image', 'transparent']
+    > &
+      Schema.Attribute.DefaultTo<'transparent'>;
+    containerType: Schema.Attribute.Enumeration<
+      ['boxed', 'full-width', 'fluid']
+    > &
+      Schema.Attribute.DefaultTo<'boxed'>;
+    content: Schema.Attribute.DynamicZone<
+      [
+        'shared.hero',
+        'shared.cta',
+        'shared.article',
+        'shared.feature-grid',
+        'shared.gallery',
+        'shared.testimonial',
+      ]
+    >;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    order: Schema.Attribute.Integer;
+    type: Schema.Attribute.Enumeration<
+      ['Hero', 'CTA', 'Article', 'FeatureGrid', 'Gallery', 'Testimonial']
+    >;
+    variant: Schema.Attribute.Enumeration<
+      ['default', 'primary', 'secondary', 'dark', 'light']
+    >;
+    visible: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+  };
+}
+
+export interface SharedArticle extends Struct.ComponentSchema {
+  collectionName: 'components_shared_article';
+  info: {
+    displayName: 'Article';
+  };
+  attributes: {
+    author: Schema.Attribute.String;
+    content: Schema.Attribute.RichText;
+    image: Schema.Attribute.Media;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface SharedCta extends Struct.ComponentSchema {
+  collectionName: 'components_shared_cta';
+  info: {
+    displayName: 'CTA';
+  };
+  attributes: {
+    href: Schema.Attribute.String;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    variant: Schema.Attribute.Enumeration<
+      ['primary', 'secondary', 'outline', 'ghost']
+    >;
+  };
+}
+
 export interface SharedCtaButton extends Struct.ComponentSchema {
   collectionName: 'components_shared_cta_buttons';
   info: {
@@ -424,6 +489,51 @@ export interface SharedCtaSection extends Struct.ComponentSchema {
       ['default', 'dark', 'card', 'banner']
     > &
       Schema.Attribute.DefaultTo<'default'>;
+  };
+}
+
+export interface SharedFeatureGrid extends Struct.ComponentSchema {
+  collectionName: 'components_shared_feature_grid';
+  info: {
+    displayName: 'Feature Grid';
+  };
+  attributes: {
+    features: Schema.Attribute.Component<'shared.feature-item', true>;
+  };
+}
+
+export interface SharedFeatureItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_feature_item';
+  info: {
+    displayName: 'Feature Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface SharedGallery extends Struct.ComponentSchema {
+  collectionName: 'components_shared_gallery';
+  info: {
+    displayName: 'Gallery';
+  };
+  attributes: {
+    images: Schema.Attribute.Media<undefined, true>;
+  };
+}
+
+export interface SharedHero extends Struct.ComponentSchema {
+  collectionName: 'components_shared_hero';
+  info: {
+    displayName: 'Hero';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media;
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -524,6 +634,28 @@ export interface SharedStatItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTestimonial extends Struct.ComponentSchema {
+  collectionName: 'components_shared_testimonial';
+  info: {
+    displayName: 'Testimonial';
+  };
+  attributes: {
+    author: Schema.Attribute.String & Schema.Attribute.Required;
+    avatar: Schema.Attribute.Media;
+    quote: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
+export interface SharedTextBlock extends Struct.ComponentSchema {
+  collectionName: 'components_shared_text_block';
+  info: {
+    displayName: 'Text Block';
+  };
+  attributes: {
+    text: Schema.Attribute.RichText;
+  };
+}
+
 export interface SharedValueItem extends Struct.ComponentSchema {
   collectionName: 'components_shared_value_items';
   info: {
@@ -568,14 +700,23 @@ declare module '@strapi/strapi' {
       'navigation.parent-menu': NavigationParentMenu;
       'navigation.section-menu': NavigationSectionMenu;
       'projects.hero': ProjectsHero;
+      'section.section': SectionSection;
+      'shared.article': SharedArticle;
+      'shared.cta': SharedCta;
       'shared.cta-button': SharedCtaButton;
       'shared.cta-section': SharedCtaSection;
+      'shared.feature-grid': SharedFeatureGrid;
+      'shared.feature-item': SharedFeatureItem;
+      'shared.gallery': SharedGallery;
+      'shared.hero': SharedHero;
       'shared.link-item': SharedLinkItem;
       'shared.menu-cta': SharedMenuCta;
       'shared.section-header': SharedSectionHeader;
       'shared.seo': SharedSeo;
       'shared.social-link': SharedSocialLink;
       'shared.stat-item': SharedStatItem;
+      'shared.testimonial': SharedTestimonial;
+      'shared.text-block': SharedTextBlock;
       'shared.value-item': SharedValueItem;
     }
   }

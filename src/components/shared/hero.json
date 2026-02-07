@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_hero",
+  "info": { "displayName": "Hero" },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string" },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "cta": { "type": "component", "component": "shared.cta", "required": false }
+  }
+}

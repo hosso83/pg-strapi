@@ -1,0 +1,7 @@
+{
+  "collectionName": "components_shared_gallery",
+  "info": { "displayName": "Gallery" },
+  "attributes": {
+    "images": { "type": "media", "multiple": true }
+  }
+}

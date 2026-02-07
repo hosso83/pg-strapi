@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_section",
+  "info": {
+    "displayName": "Section"
+  },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Hero",
+        "CTA",
+        "Article",
+        "FeatureGrid",
+        "Gallery",
+        "Testimonial"
+      ]
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["default", "primary", "secondary", "dark", "light"]
+    },
+    "order": { "type": "integer" },
+    "visible": { "type": "boolean", "default": true },
+    "containerType": {
+      "type": "enumeration",
+      "enum": ["boxed", "full-width", "fluid"],
+      "default": "boxed"
+    },
+    "backgroundType": {
+      "type": "enumeration",
+      "enum": ["color", "image", "transparent"],
+      "default": "transparent"
+    },
+    "backgroundColor": { "type": "string" },
+    "backgroundImage": { "type": "media", "multiple": false },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.hero",
+        "shared.cta",
+        "shared.article",
+        "shared.feature-grid",
+        "shared.gallery",
+        "shared.testimonial"
+      ]
+    }
+  }
+}

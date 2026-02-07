@@ -915,6 +915,34 @@ export interface ApiOfficeOffice extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiPagePage extends Struct.CollectionTypeSchema {
+  collectionName: 'pages';
+  info: {
+    description: 'Flexible page collection with dynamic fields';
+    displayName: 'Page';
+    pluralName: 'pages';
+    singularName: 'page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.Component<'section.section', true>;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProjectSubmissionProjectSubmission
   extends Struct.CollectionTypeSchema {
   collectionName: 'project_submissions';
@@ -1785,6 +1813,7 @@ declare module '@strapi/strapi' {
       'api::job-position.job-position': ApiJobPositionJobPosition;
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::office.office': ApiOfficeOffice;
+      'api::page.page': ApiPagePage;
       'api::project-submission.project-submission': ApiProjectSubmissionProjectSubmission;
       'api::project.project': ApiProjectProject;
       'api::projects-page.projects-page': ApiProjectsPageProjectsPage;

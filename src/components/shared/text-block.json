@@ -1,0 +1,7 @@
+{
+  "collectionName": "components_shared_text_block",
+  "info": { "displayName": "Text Block" },
+  "attributes": {
+    "text": { "type": "richtext" }
+  }
+}
