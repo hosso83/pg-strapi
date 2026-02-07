@@ -43,12 +43,11 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.social-link"
-    }
-      },
-      "navigation": {
-        "type": "relation",
-        "relation": "oneToOne",
-        "target": "api::navigation.navigation"
-      }
+    },
+    "navigation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::navigation.navigation"
     }
   }
+}
